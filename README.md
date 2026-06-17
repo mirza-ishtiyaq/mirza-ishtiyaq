@@ -1,30 +1,33 @@
-# Hi, I'm Mirza Ishtiyaq Baig
+## Mirza Ishtiyaq Baig
 
-### Data Analyst | Transforming Raw Data into Business Strategy
-Leveraging a strong background in operational efficiency and customer experience from Concentrix, I specialize in building data pipelines, uncovering behavioral insights, and designing executive dashboards that drive strategic business decisions.
+Data Analyst and Business Intelligence Engineer focused on building end-to-end analytics solutions using Azure Fabric, Spark SQL, Power BI, and Excel.
 
----
+### Technical Skills
 
-## Technical Toolbox
-* **Data Querying & Pipelines:** SQL Server, MySQL, Power Query, Spark SQL
-* **Analytics & Scripting:** Python (Pandas, NumPy, Matplotlib, Seaborn)
-* **Cloud & Modern Data Stack:** Azure Fabric, Azure Fundamentals
-* **BI & Visualization:** Power BI, Tableau, Advanced Excel
+- **Analytics & BI**: Power BI, Azure Fabric, DAX
+- **Data Engineering**: Spark SQL, Data Modeling, ETL
+- **Data Querying**: SQL Server, MySQL, Power Query
+- **Tools**: Python (Pandas, NumPy), Advanced Excel, Git
 
----
+### Featured Work
 
-## Featured Analytics Projects
+**End-to-End Sales Analytics Dashboard**
+- [Repository](https://github.com/mirza-ishtiyaq/end-to-end-sales-analytics-dashboard)
+- Power BI dashboard with Azure Fabric and Spark SQL backend
+- Processes 9,800+ transactions with logic-first architecture
+- Year-over-year analysis, KPI tracking, interactive visualizations
 
-### [End-to-End Sales Analytics Dashboard](https://github.com/mirza-ishtiyaq/end-to-end-sales-analytics-dashboard)
-* **The Business Problem:** Disconnected retail transaction data making it difficult for executive leadership to track real-time revenue and cohort trends.
-* **The Solution:** Engineered a logic-first architecture processing 9,800+ transactions. Developed automated ETL pipelines in Azure Fabric/Spark SQL and delivered an interactive Power BI dashboard.
+**Sales Data Analysis & Cohort Reporting**
+- [Repository](https://github.com/mirza-ishtiyaq/sales-data-analysis-sql)
+- Data cleaning and missing value imputation in MySQL
+- Advanced cohort analysis for customer lifetime value and churn cycles
 
-### [Sales Data Analysis & Cohort Reporting](https://github.com/mirza-ishtiyaq/sales-data-analysis-sql)
-* **The Business Problem:** Raw transaction data containing duplicates and missing fields, preventing accurate customer retention analysis.
-* **The Solution:** Performed native data cleaning and missing value imputation in MySQL. Built advanced cohort analysis models to isolate customer lifetime value (LTV) and churn cycles.
+### Current Focus
 
----
+Building scalable analytics solutions that translate raw data into actionable business insights. Specializing in designing dashboards with proper data modeling, ETL optimization, and business-focused metrics.
 
-## Let's Connect!
-* **LinkedIn:** [linkedin.com/in/mirzaishtiyaqbaig](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
-* **Email:** mirzaishtiyaqbaig1@gmail.com
+### Let's Connect
+
+- LinkedIn: [linkedin.com/in/mirzaishtiyaqbaig](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
+- Email: mirzaishtiyaqbaig1@gmail.com
+- GitHub: [@mirza-ishtiyaq](https://github.com/mirza-ishtiyaq)
