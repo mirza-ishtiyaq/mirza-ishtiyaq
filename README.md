@@ -1,6 +1,9 @@
 ## Mirza Ishtiyaq Baig
 
-Data Analyst and Business Intelligence Engineer focused on building end-to-end analytics solutions using Azure Fabric, Spark SQL, Power BI, and Excel.
+### 👋 About Me
+I am a Data Analyst bringing a solid foundation of 2+ years of corporate experience in MIS reporting and operations, backed by a B.Sc. in Data Science. My background gives me a unique edge in understanding complex stakeholder needs, optimizing high-volume workflows, and knowing exactly what metrics drive business value. 
+
+To bridge the gap between reporting and advanced analytics, I focus on building end-to-end, production-ready data projects. I specialize in turning messy operational datasets into strategic assets using **complex SQL querying, Power BI DAX modeling, and Python (Pandas)** to reduce manual overhead and drive immediate insights.
 
 ### Technical Skills
 
