@@ -10,7 +10,7 @@ To bridge the gap between reporting and advanced analytics, I focus on building 
 - **Analytics & BI**: Power BI, Azure Fabric, DAX
 - **Data Engineering**: Spark SQL, Data Modeling, ETL
 - **Data Querying**: SQL Server, MySQL, Power Query
-- **Tools**: Python (Pandas, NumPy), Advanced Excel, Git
+- **Tools**: Python (Pandas, NumPy), Advanced Excel, Git, Databricks
 
 ### Featured Work
 
