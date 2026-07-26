@@ -15,7 +15,7 @@ To bridge the gap between reporting and advanced analytics, I focus on building 
 ### Featured Work
 
 **US Greenhouse Gas Emissions & Visual Analytics**
-* [Repository](LINK-TO-YOUR-REPO-HERE)
+* [Repository](https://github.com/mirza-ishtiyaq/ecommerce-databricks-sql-medallion-pipeline)
 * End-to-end data pipeline and interactive dashboard built natively in **Databricks**.
 * Engineered advanced **Spark SQL** queries (CTEs, Cross Joins, Data Type Casting) to process and analyze county-level environmental data.
 * Designed executive-level visualizations to track localized pollution hotspots and per-capita distribution dynamics.
