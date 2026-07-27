@@ -1,7 +1,7 @@
 # Mirza Ishtiyaq Baig | Data Analyst & Analytics Engineer
 
 ### 👋 About Me
-I am a Data Analyst and Analytics Engineer with a B.Sc. in Data Science and over two years of corporate experience in MIS reporting and operations. I specialize in bridging the gap between raw operational data and executive decision-making. 
+I am a Data Analyst and Analytics Engineer with a B.Sc. in Data Science and over two years of corporate experience in reporting and operations. I specialise in bridging the gap between raw operational data and executive decision-making. 
 
 My approach to data isn't just about writing code; it's about solving business problems. Having worked deeply with high-volume workflows and stakeholder demands, I build resilient, production-grade data pipelines that focus on exactly what matters: financial impact, operational efficiency, and scalable architecture. I transform messy, real-world data into reliable strategic assets using modern cloud data warehouses, defensive SQL, and Python.
 
