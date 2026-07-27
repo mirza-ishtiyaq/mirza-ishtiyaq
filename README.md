@@ -36,6 +36,12 @@ My approach to data isn't just about writing code; it's about solving business p
 * **Business Impact:** Unified fragmented operational data across CRM and fulfillment systems into a clean analytical dataset.
 * **Architecture:** Engineered a custom data sanitization engine addressing primary key deduplication, categorical string normalization, non-destructive missing value imputation, and transit lead-time anomaly detection.
 
+#### 5. [Retail Sales Analytics & Store Performance Reporting](https://github.com/mirza-ishtiyaq/Retail-Sales-Analysis)
+* **Tech Stack:** Python (Pandas, Seaborn), SQL, Exploratory Data Analysis
+* **Business Impact:** Evaluated multi-category retail transactions across regional store branches to isolate high-yield product categories and seasonal demand shifts.
+* **Architecture:** Formatted transactional feeds, generated category-level revenue heatmaps, and implemented automated summary reporting pipelines.
+
+
 ---
 
 ### 💡 Current Focus
