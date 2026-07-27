@@ -1,42 +1,47 @@
-## Mirza Ishtiyaq Baig
+# Mirza Ishtiyaq Baig | Data Analyst & Analytics Engineer
 
 ### 👋 About Me
-I am a Data Analyst bringing a solid foundation of 2+ years of corporate experience in MIS reporting and operations, backed by a B.Sc. in Data Science. My background gives me a unique edge in understanding complex stakeholder needs, optimizing high-volume workflows, and knowing exactly what metrics drive business value. 
+I am a Data Analyst and Analytics Engineer with a B.Sc. in Data Science and over two years of corporate experience in MIS reporting and operations. I specialize in bridging the gap between raw operational data and executive decision-making. 
 
-To bridge the gap between reporting and advanced analytics, I focus on building end-to-end, production-ready data projects. I specialize in turning messy operational datasets into strategic assets using **complex SQL querying, Power BI DAX modeling, and Python (Pandas)** to reduce manual overhead and drive immediate insights.
+My approach to data isn't just about writing code; it's about solving business problems. Having worked deeply with high-volume workflows and stakeholder demands, I build resilient, production-grade data pipelines that focus on exactly what matters: financial impact, operational efficiency, and scalable architecture. I transform messy, real-world data into reliable strategic assets using modern cloud data warehouses, defensive SQL, and Python.
 
-### Technical Skills
+### 🛠️ Technical Stack & Architecture
+* **Cloud Data Platforms:** Snowflake, Databricks (Delta Lake), Azure Synapse Analytics, Microsoft Fabric
+* **Data Engineering & Architecture:** Medallion Architecture (Bronze/Silver/Gold), Dimensional Modeling (Star Schema), ETL/ELT pipelines
+* **Advanced Querying:** T-SQL, Spark SQL, Defensive SQL (CTEs, Window Functions, Guard Clauses)
+* **Programming & Cleansing:** Python (Pandas, NumPy), REST API Ingestion, Data Quality Auditing
+* **Business Intelligence:** Power BI (DAX, Exception Reporting, Executive Dashboards)
 
-- **Analytics & BI**: Power BI, Azure Fabric, DAX
-- **Data Engineering**: Spark SQL, Data Modeling, ETL
-- **Data Querying**: SQL Server, MySQL, Power Query
-- **Tools**: Python (Pandas, NumPy), Advanced Excel, Git, Databricks
+---
 
-### Featured Work
+### 🚀 Featured Architecture & Enterprise Projects
 
-**US Greenhouse Gas Emissions & Visual Analytics**
-* [Repository](https://github.com/mirza-ishtiyaq/ecommerce-databricks-sql-medallion-pipeline)
-* End-to-end data pipeline and interactive dashboard built natively in **Databricks**.
-* Engineered advanced **Spark SQL** queries (CTEs, Cross Joins, Data Type Casting) to process and analyze county-level environmental data.
-* Designed executive-level visualizations to track localized pollution hotspots and per-capita distribution dynamics.
+#### 1. [Pharmaceutical Cold-Chain Logistics: Spoilage Analytics](https://github.com/mirza-ishtiyaq/Cold-Chain-Logistics-Analytics)
+* **Tech Stack:** Snowflake, Python (Open-Meteo REST API), Power BI, SQL
+* **Business Impact:** Engineered an end-to-end data mart analyzing 5,000 shipments to identify a $709K financial loss tied to 3PL transit delays under extreme weather conditions.
+* **Architecture:** Ingested external API data via Python, designed a multi-layer Snowflake staging environment (RAW/CLEAN/BUSINESS), and engineered robust transit and loss allocation models for executive reporting.
 
-**End-to-End Sales Analytics Dashboard**
-- [Repository](https://github.com/mirza-ishtiyaq/end-to-end-sales-analytics-dashboard)
-- Power BI dashboard with Azure Fabric and Spark SQL backend
-- Processes 9,800+ transactions with logic-first architecture
-- Year-over-year analysis, KPI tracking, interactive visualizations
+#### 2. [Enterprise Databricks Medallion Pipeline](https://github.com/mirza-ishtiyaq/ecommerce-databricks-sql-medallion-pipeline)
+* **Tech Stack:** Databricks, Spark SQL, Delta Lake, Power BI
+* **Business Impact:** Built a scalable analytics platform pushing 90% of business logic upstream to ensure downstream BI performance.
+* **Architecture:** Implemented a full Bronze-Silver-Gold Medallion architecture. Handled high-precision temporal normalizations, operational nulls, and constructed optimized Fact/Dimension star schemas.
 
-**Sales Data Analysis & Cohort Reporting**
-- [Repository](https://github.com/mirza-ishtiyaq/sales-data-analysis-sql)
-- Data cleaning and missing value imputation in MySQL
-- Advanced cohort analysis for customer lifetime value and churn cycles
+#### 3. [EcomDB Analytics Suite (Production SQL)](https://github.com/mirza-ishtiyaq/ecomdb-sql-analytics)
+* **Tech Stack:** Azure Synapse Analytics, Microsoft Fabric, T-SQL
+* **Business Impact:** Wrote production-ready analytical models focused on targeting cold leads, anomaly detection, and customer retention scoring.
+* **Architecture:** Designed with defensive SQL methodologies. Every query utilizes strict CTE architectures, handles Synapse-specific DATETIME2 constraints, and demonstrates a deep understanding of join consequences on large datasets.
 
-### Current Focus
+#### 4. [Production Data Cleansing & EDA Engine](https://github.com/mirza-ishtiyaq/data-cleaning-analysis-pandas)
+* **Tech Stack:** Python, Pandas, NumPy, Matplotlib
+* **Business Impact:** Unified fragmented operational data across CRM and fulfillment systems into a clean analytical dataset.
+* **Architecture:** Engineered a custom data sanitization engine addressing primary key deduplication, categorical string normalization, non-destructive missing value imputation, and transit lead-time anomaly detection.
 
-Building scalable analytics solutions that translate raw data into actionable business insights. Specializing in designing dashboards with proper data modeling, ETL optimization, and business-focused metrics.
+---
 
-### Let's Connect
+### 💡 Current Focus
+Building enterprise-grade, logic-first analytics solutions using modern data stack principles. I am focused on writing clean, defensible code that translates complex cloud architecture into immediate, actionable business insights.
 
-- LinkedIn: [linkedin.com/in/mirzaishtiyaqbaig](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
-- Email: mirzaishtiyaqbaig1@gmail.com
-- GitHub: [@mirza-ishtiyaq](https://github.com/mirza-ishtiyaq)
+### 📫 Let's Connect
+* **LinkedIn:** [linkedin.com/in/mirzaishtiyaqbaig](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
+* **Email:** mirzaishtiyaqbaig1@gmail.com
+* **GitHub:** [@mirza-ishtiyaq](https://github.com/mirza-ishtiyaq)
