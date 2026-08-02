@@ -75,7 +75,7 @@ My project portfolio extends this into cloud data architecture — Medallion pip
 
 ---
 
-### 5. E-Commerce Data Warehouse & Analytics Pipeline <sup>†</sup>
+### 5. [E-Commerce Data Warehouse & Analytics Pipeline](https://github.com/mirza-ishtiyaq/e-commerce-etl-pipeline)
 **Stack:** DuckDB · Python (Faker, Pandas) · SQL
 
 **Problem:** Support and fulfillment teams need to know which high-value customers are experiencing SLA breaches before it shows up as churn.
@@ -83,8 +83,6 @@ My project portfolio extends this into cloud data architecture — Medallion pip
 **What I built:** A seeded, fully deterministic synthetic-data ELT pipeline (1M orders, 1M support tickets, 50K customers) through a Bronze→Silver→Gold DuckDB warehouse, with a window-function-based cohort retention analysis layered on top of the KPI reporting. Re-ran the entire pipeline end-to-end for this review and confirmed every headline figure reproduces exactly — the one project in this portfolio built for full, byte-for-byte reproducibility rather than a single point-in-time analysis.
 
 **Patterns demonstrated:** Deterministic/seeded synthetic data generation · Medallion ELT in DuckDB · Window-function cohort retention · SLA/VIP risk modeling
-
-<sup>† Repository not yet published to GitHub — local project, available on request.</sup>
 
 ---
 
