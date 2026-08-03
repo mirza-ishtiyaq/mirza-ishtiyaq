@@ -39,8 +39,8 @@ Every project below is held to one standard: **every claim in the write-up has t
 | **$709.5K** spoilage loss quantified, traced to 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
 | **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
 | **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
-| **$2.26M** in multi-year sales reconciled Power BI ↔ Excel to the cent | Enterprise Sales Dashboard (Power BI) |
-| **7** end-to-end analytics builds across Snowflake, Databricks, Synapse, MySQL, DuckDB & Python | This portfolio |
+| **49.35%** of tickets flagged urgent VIP-risk before they became churn | CX SLA Diagnostic Engine (DuckDB) |
+| **7** end-to-end analytics builds across Snowflake, Databricks, Synapse, MySQL, DuckDB & Python — 3 featured as core case studies below | This portfolio |
 | **3** real data/reporting bugs found and fixed under independent review | Not just built — checked |
 
 ---
@@ -59,6 +59,8 @@ Every project below is held to one standard: **every claim in the write-up has t
 ---
 
 ## Featured Projects
+
+The three case studies below are the ones I'd point a recruiter to first — they map directly to the domain I'm targeting (e-commerce operations, supply chain, and CX analytics) and each carries a quantified, verified business outcome. Four more projects — SQL, BI, and data-quality work — are summarized further down in [Additional Projects](#additional-projects).
 
 ### 1. Pharmaceutical Cold-Chain Spoilage Analytics & SLA Claim Engine
 **[Repository →](https://github.com/mirza-ishtiyaq/snowflake-pharma-logistics-pipeline)** &nbsp; `Snowflake` `Python` `Open-Meteo REST API` `Power BI`
@@ -150,98 +152,16 @@ flowchart LR
 
 ---
 
-### 4. Enterprise Sales Analytics Dashboard
-**[Repository →](https://github.com/mirza-ishtiyaq/PowerBI_Sales_analysis_dashboard)** &nbsp; `Azure Fabric` `Spark SQL` `Power BI` `DAX` `Excel`
+## Additional Projects
 
-**Data Source:** A 4-year (2015–2018) retail/B2B order-level dataset spanning 3 product categories (Furniture, Office Supplies, Technology) and 3 customer segments (Consumer, Corporate, Home Office).
+Broader SQL, BI, and data-engineering fundamentals — each still a complete, verified build, kept here in short form so the three case studies above stay the focus.
 
-**Problem:** Leadership needed a five-minute read on whether growth was accelerating or just a bounce-back from a weak prior year, and which category was actually driving it.
-
-```mermaid
-flowchart LR
-    A["Raw Order-Level<br/>Transactions"] --> B["Azure Fabric +<br/>Spark SQL Transform"]
-    B --> C["Excel Pivot-Table<br/>Independent Validation"]
-    B --> D["Power BI Star Schema<br/>+ DAX Time Intelligence"]
-    D --> E["2-Page Executive<br/>Report"]
-```
-
-![Power BI Sales Dashboard — KPI Overview](images/powerbi_dashboard_kpi.jpg)
-![Power BI Category Detail Table](images/powerbi_category_detail.jpg)
-![Excel Validation Pivot Tables](images/powerbi_excel_validation.jpg)
-
-**Solution & Findings:**
-- **$2.26M** total sales · **4,922** orders · **$459.48** avg sales/order · **793** customers · **46.90% YoY growth** — reconciled to the cent against an independently built Excel pivot (**$2,261,536.78** grand total).
-- Caught that the headline 46.90% YoY figure sits on top of a **2016 dip** (revenue fell 2015→2016 before rebounding in 2017–2018) — flagged as partly a recovery story, not pure acceleration.
-- Order volume and revenue rank categories **differently**: Office Supplies leads on order count (3.68K) but Technology leads on 2018 revenue ($269.4K) — a lower-frequency, higher-ticket category.
-- Documented that full-year growth masks in-year softening — the Total Sales MTD trend peaked in 2017 and pulled back in 2018, despite 2018 being the strongest full year on record.
-
-**Tools Used:** Azure Fabric, Spark SQL, Power BI (DAX time-intelligence, star schema), Excel (pivot-table validation).
-
-**Stakeholder Summary:** The 46.90% growth headline is real but partly a rebound off 2016. Read **Technology as the highest-*value*, not highest-*volume*, category**, and treat Furniture — steady but slowest-growing — as the one category needing a distinct growth strategy.
-
----
-
-### 5. Retail Data Quality & Executive Analytics Engine
-**[Repository →](https://github.com/mirza-ishtiyaq/python-data-quality-engine)** &nbsp; `Python` `Pandas` `NumPy` `Matplotlib`
-
-**Data Source:** Three synthetic CRM/order/transaction extracts engineered with realistic production defects — duplicate primary keys, inconsistent country strings, missing contact fields, negative lead-times, and orphaned transaction records.
-
-**Problem:** Retail data fragmented across CRM, fulfilment, and payment systems obscures true revenue and delivery performance — and a naive join here silently inflates revenue.
-
-**Approach:** A modular Python/Pandas pipeline — deduplicate → standardize → impute → join → anomaly-flag — with every step printing a before/after row-count audit.
-
-![Retail Executive Dashboard](images/python_data_quality_dashboard.png)
-
-**Solution & Findings:**
-- Deduplication, country-string standardization, and non-destructive imputation applied via reusable, auditable functions.
-- Deliberately avoided a fan-out trap: `transactions` has no `order_id`, so joining it in on `customer_id` alone would cross-multiply every order by every transaction per customer and silently inflate summed revenue. Instead, transactions were validated **independently** against the customer master — surfacing **3 orphan transactions** ($100,000, $95,500, -$150) tied to customer IDs that don't exist anywhere, excluded rather than joined in.
-- **$78.08** AOV · **$107.77** ATV · **$3,826.12** total gross revenue · **2.92-day** average clean shipping lead-time · **9** negative-lead-time records flagged for IT sync review (kept, not dropped).
-
-**Tools Used:** Python, Pandas, NumPy, Matplotlib, Jupyter.
-
-**Stakeholder Summary:** Ops gets a clean, audited revenue and SLA baseline plus a **named list** of 9 sync-error orders and 3 corrupted gateway transactions to route back to IT — not a report that silently absorbed the bad records into the totals.
-
----
-
-### 6. Sales Data Analysis & Business Logic (MySQL)
-**[Repository →](https://github.com/mirza-ishtiyaq/Sales_Analysis.SQL)** &nbsp; `MySQL 8.0+` `CTEs` `Window Functions`
-
-**Data Source:** A `sales_analysis` MySQL schema (customers/orders/transactions) — query and pipeline logic only, documented explicitly as a portfolio artifact against an assumed schema rather than a clone-and-run demo.
-
-**Problem:** Turn messy source data into trustworthy, queryable BI views (revenue, top customers, MoM growth, shipping SLA) — and catch a bug an earlier pass had already silently shipped.
-
-**Approach:** A 5-phase SQL evolution — `00` legacy exploratory script → `01` cleaning → `02` standardization → `03` analytical views → `04` consolidated, corrected pipeline.
-
-**Solution & Findings:**
-- Traced one bug across its **full lifecycle**: `vw_total_revenue` used an `INNER JOIN` that silently dropped 3 unmatched orders from every revenue total. The legacy script's own comment claimed the fix had shipped — but the code still read `INNER JOIN`. The actual fix (`LEFT JOIN`) only landed in the final consolidated pipeline (`04`).
-- Fixed a non-deterministic dedup: `ROW_NUMBER() OVER (PARTITION BY customer_id ORDER BY customer_id)` was a no-op tie-break; reordered by `created_date DESC` for a real, reproducible keep-rule.
-- Month-over-Month growth via `LAG()`, shipping SLA buckets (Fast/Normal/Slow/Flagged), plus a full manual dialect/logic correctness review documented directly in the README.
-
-**Tools Used:** MySQL 8.0+, CTEs, Window Functions (`LAG`, `ROW_NUMBER`), Views as a BI semantic layer.
-
-**Stakeholder Summary:** The revenue number stakeholders were shown before this review was **undercounted**. `04_complete_pipeline.sql` is the version to run — it's the only one where the fix that was already "documented" actually shipped.
-
----
-
-### 7. EcomDB — Enterprise SQL Analytics Suite (Synapse/Fabric)
-**[Repository →](https://github.com/mirza-ishtiyaq/azure-synapse-enterprise-analytics)** &nbsp; `T-SQL` `Azure Synapse` `Microsoft Fabric`
-
-**Data Source:** A normalized 5-table e-commerce schema (customers, products, orders, reviews, inventory), seeded directly in the repository's own setup script — self-contained and runnable end-to-end.
-
-**Problem:** Translate five concrete merchandising/marketing/ops questions into production-grade, cloud-warehouse-safe T-SQL — not textbook syntax drills.
-
-**Approach:** Five documented business queries, each opening with the business question and closing with a trade-off note, run against the seeded schema.
-
-**Solution & Findings:**
-- **Q1:** `DENSE_RANK` (not `ROW_NUMBER`) for top-2-products-per-category — verified against seed data that two Appliance products genuinely tie at $900 revenue, and `DENSE_RANK` surfaces both instead of arbitrarily hiding one.
-- **Q2:** `NOT EXISTS` (not `LEFT JOIN + IS NULL`) for cold-lead detection — chosen for short-circuit performance at real scale.
-- **Q3:** An anchor-date arithmetic trick (row number − date) detects 3+ consecutive-day purchasers with a single `GROUP BY`, no self-join — verified against seed data.
-- **Q4/Q5:** Loyalty-tier segmentation by days-to-second-purchase, with an explicit `HAVING COUNT(*) = 2` guard and a documented `DATEDIFF` midnight-boundary quirk solved via an hour-level `LEAD()` approach.
-- A dedicated platform-notes table documents real Synapse/Fabric-specific gotchas (`DATETIME2` precision requirements, `ORDER BY`-in-CTE restrictions, unenforced constraints).
-
-**Tools Used:** T-SQL, Azure Synapse Analytics, Microsoft Fabric Warehouse compatibility patterns.
-
-**Stakeholder Summary:** Five ready-to-adapt query patterns — revenue ranking, re-engagement targeting, loyalty segmentation — that already account for the specific ways Synapse/Fabric differ from standard SQL Server, removing a debugging session most analysts hit on day one.
+| Project | Stack | Highlight |
+|---|---|---|
+| **[Enterprise Sales Analytics Dashboard](https://github.com/mirza-ishtiyaq/PowerBI_Sales_analysis_dashboard)** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M in multi-year sales reconciled Power BI ↔ Excel to the cent; the project behind my Python/ODBC live-reporting bridge from the Full Stack Academy internship. |
+| **[Retail Data Quality & Executive Analytics Engine](https://github.com/mirza-ishtiyaq/python-data-quality-engine)** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline that deliberately avoided a fan-out join bug and caught 3 orphan transactions instead of silently absorbing them. |
+| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/Sales_Analysis.SQL)** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
+| **[EcomDB — Enterprise SQL Analytics Suite](https://github.com/mirza-ishtiyaq/azure-synapse-enterprise-analytics)** | T-SQL · Azure Synapse · Microsoft Fabric | Five production business-question queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse/Fabric-specific gotchas. |
 
 ---
 
