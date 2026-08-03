@@ -31,18 +31,7 @@ My project portfolio extends this into cloud data architecture — Medallion pip
 
 ## Projects
 
-### 1. [Enterprise Databricks Medallion Pipeline](https://github.com/mirza-ishtiyaq/databricks-medallion-architecture)
-**Stack:** Databricks · Spark SQL · Delta Lake · Power BI
-
-**Problem:** Fragmented e-commerce and logistics data with no unified analytical layer — causing slow BI reporting and business logic leaking into dashboards instead of being resolved at the data layer.
-
-**What I built:** A full Bronze-Silver-Gold Medallion architecture over the public Olist Brazilian e-commerce dataset (~99K orders). Bronze ingests raw source data as Delta tables; Silver handles temporal normalization and null-key filtering; Gold builds an optimized star schema with pre-computed delivery-SLA flags and a dedicated lost-revenue fact table, pushing 90% of business logic upstream of Power BI. Cross-checked the dashboard's headline figures ($1.20M gross revenue, $97.24K/8.12% leakage, 12.3-day national transit) directly against the underlying screenshots — and caught a real labeling error: the 26-day logistics bottleneck state is Rondônia ("RO"), not Roraima ("RR") as the dashboard itself had mislabeled it.
-
-**Patterns demonstrated:** Medallion architecture design · Delta Lake ACID transactions · Star schema modeling · Screenshot-grounded verification
-
----
-
-### 2. [Pharmaceutical Cold-Chain Logistics: Spoilage Analytics](https://github.com/mirza-ishtiyaq/snowflake-pharma-logistics-pipeline)
+### 1. [3PL Cold-Chain Spoilage & SLA Claim Engine](https://github.com/mirza-ishtiyaq/snowflake-pharma-logistics-pipeline)
 **Stack:** Snowflake · Python · Open-Meteo REST API · Power BI
 
 **Problem:** Cold-chain operations lack visibility into how weather conditions and 3PL carrier transit delays drive pharmaceutical spoilage risk — making it invisible until after the loss is booked.
@@ -53,29 +42,18 @@ My project portfolio extends this into cloud data architecture — Medallion pip
 
 ---
 
-### 3. [EcomDB Analytics Suite — Azure Synapse](https://github.com/mirza-ishtiyaq/azure-synapse-enterprise-analytics)
-**Stack:** Azure Synapse Analytics · Microsoft Fabric · T-SQL
+### 2. [E-Commerce Medallion Pipeline & Revenue Leakage Audit](https://github.com/mirza-ishtiyaq/databricks-medallion-architecture)
+**Stack:** Databricks · Spark SQL · Delta Lake · Power BI
 
-**Problem:** E-commerce operations need analytical models beyond revenue totals — identifying at-risk customers, anomalous transactions, and retention patterns from raw transactional data at scale.
+**Problem:** Fragmented e-commerce and logistics data with no unified analytical layer — causing slow BI reporting and business logic leaking into dashboards instead of being resolved at the data layer.
 
-**What I built:** Five production-style T-SQL query patterns (a `DENSE_RANK` tie-surfacing example, `NOT EXISTS` cold-lead detection, a consecutive-purchase-day "anchor" trick, loyalty segmentation, and two approaches to impulse-purchase detection) against a normalized 5-table schema, with explicit Synapse/Fabric platform-quirk documentation. Actually executed all five queries against the seed data to confirm the documented behaviors hold — and found the two flagship examples (the ranking tie and the purchase streak) weren't reproducible against the original seed data at all, so extended it with two minimal, clearly-marked rows so both are now genuinely verifiable, not just narrated.
+**What I built:** A full Bronze-Silver-Gold Medallion architecture over the public Olist Brazilian e-commerce dataset (~99K orders). Bronze ingests raw source data as Delta tables; Silver handles temporal normalization and null-key filtering; Gold builds an optimized star schema with pre-computed delivery-SLA flags and a dedicated lost-revenue fact table, pushing 90% of business logic upstream of Power BI. Cross-checked the dashboard's headline figures ($1.20M gross revenue, $97.24K/8.12% leakage, 12.3-day national transit) directly against the underlying screenshots — and caught a real labeling error: the 26-day logistics bottleneck state is Rondônia ("RO"), not Roraima ("RR") as the dashboard itself had mislabeled it.
 
-**Patterns demonstrated:** Defensive T-SQL methodology · Azure Synapse architecture · Customer lifecycle analytics · Execution-verified query documentation
-
----
-
-### 4. [Production Data Cleansing & EDA Engine](https://github.com/mirza-ishtiyaq/python-data-quality-engine)
-**Stack:** Python · Pandas · NumPy · Matplotlib
-
-**Problem:** CRM and fulfillment datasets inherited by analysts routinely carry deduplication failures, inconsistent categoricals, and missing values that silently corrupt downstream reporting — and leave no trace of what was fixed.
-
-**What I built:** A modular Python data-quality engine (`deduplicate_entities`, `standardize_countries`, `impute_missing`) with a full anomaly audit trail. Executing the notebook end-to-end for this review surfaced and fixed a genuine cartesian-join bug that had been inflating summed revenue by ~22%, and replaced a set of headline metrics that turned out to be unverified — Average Order Value and Average Transaction Value were both listed as an identical, implausible $104.38 — with real, execution-verified figures.
-
-**Patterns demonstrated:** Production-grade data cleansing architecture · Modular Python design · Referential-integrity bug detection · Data quality auditing with a full audit trail
+**Patterns demonstrated:** Medallion architecture design · Delta Lake ACID transactions · Star schema modeling · Screenshot-grounded verification
 
 ---
 
-### 5. [E-Commerce Data Warehouse & Analytics Pipeline](https://github.com/mirza-ishtiyaq/e-commerce-etl-pipeline)
+### 3. [CX Support Ticket Lifecycle & SLA Breach Diagnostic Engine](https://github.com/mirza-ishtiyaq/e-commerce-etl-pipeline)
 **Stack:** DuckDB · Python (Faker, Pandas) · SQL
 
 **Problem:** Support and fulfillment teams need to know which high-value customers are experiencing SLA breaches before it shows up as churn.
@@ -84,49 +62,6 @@ My project portfolio extends this into cloud data architecture — Medallion pip
 
 **Patterns demonstrated:** Deterministic/seeded synthetic data generation · Medallion ELT in DuckDB · Window-function cohort retention · SLA/VIP risk modeling
 
----
-
-### 6. [Retail Sales Analytics & Store Performance Reporting](https://github.com/mirza-ishtiyaq/Retail-Sales-Analysis)
-**Stack:** Python · Pandas · Seaborn · SQL (DuckDB)
-
-**Problem:** Multi-branch retail operations need visibility into which product categories and store locations are driving margin versus volume — and where seasonal demand creates inventory risk.
-
-**What I built:** An EDA pipeline across a 9,800-row, 4-year Superstore-style dataset producing category and regional revenue breakdowns and seasonality trends, now backed by a DuckDB SQL layer that independently cross-validates every pandas aggregation via an `assert`-checked SQL query — so the "Python · Seaborn · SQL" stack is real working code, not just a label.
-
-**Patterns demonstrated:** Exploratory data analysis · Cross-validated dual-engine (pandas + SQL) reporting · Regional performance benchmarking · Transparent handling of a missing source-data gap
-
----
-
-### 7. [SQL Sales Analytics Engine](https://github.com/mirza-ishtiyaq/Sales_Analysis.SQL)
-**Stack:** MySQL 8.0 · CTEs · Window Functions
-
-**Problem:** Translate raw, duplicate-ridden transactional sales data into trustworthy, queryable BI views — without letting a join-type mistake silently understate revenue.
-
-**What I built:** A five-file MySQL pipeline that documents the actual evolution of the work: an original exploratory script, the same logic refactored into single-responsibility phases, and a final consolidated pipeline. It traces one bug end-to-end — the legacy script correctly diagnosed a revenue-undercounting `INNER JOIN` but never actually fixed it; the final pipeline does. This review caught and fixed a second, independent bug: a non-deterministic `ROW_NUMBER()` tie-break in the dedup logic, caused by ordering a partition by its own partition key.
-
-**Patterns demonstrated:** CTEs and window functions (`LAG`, `ROW_NUMBER`) · Join-type business-impact awareness · Documented pipeline evolution and bug-fix history · Independent query correctness review
-
----
-
-### 8. [U.S. Greenhouse Gas Emissions Analytics](https://github.com/mirza-ishtiyaq/Databricks-Repo)
-**Stack:** Databricks · Spark SQL
-
-**Problem:** Environmental policy and sustainability teams need state, county, and per-capita emissions views from inconsistently formatted source data to target high-impact regions.
-
-**What I built:** A Databricks SQL pipeline that cleans comma-formatted numeric strings and guards per-capita calculations against division-by-zero, with a CTE-based state-share-of-national-total pattern and a version-controlled Lakeview executive dashboard. Added a data-quality check (`TRY_CAST`) to explicitly flag values that silently fail to parse instead of disappearing as unexplained `NULL`s.
-
-**Patterns demonstrated:** Spark SQL data cleaning · CTE-based share-of-total analysis · Lakeview dashboard-as-code · Guardrails against silent cast failures
-
----
-
-### 9. [Power BI Enterprise Sales Analytics Solution](https://github.com/mirza-ishtiyaq/PowerBI_Sales_analysis_dashboard)
-**Stack:** Azure Fabric · Spark SQL · Excel · Power BI · DAX
-
-**Problem:** Leadership needs a five-minute read on whether growth is accelerating, which category is underperforming, and whether a "YoY win" is real growth or a bounce-back from a weak prior year.
-
-**What I built:** A two-page Power BI report (KPI cards, YoY/LY comparisons, category and segment breakdowns) independently validated against Excel pivot tables. Rewrote the documentation by directly inspecting the dashboard screenshots rather than relying on the prior text, surfacing findings the original writeup didn't have — the headline 46.9% YoY growth sits on top of a 2016 dip, and 2018's full-year revenue record masks an in-year MTD softening from a 2017 peak.
-
-**Patterns demonstrated:** Power BI star-schema modeling · DAX time-intelligence measures · Cross-tool validation (Excel vs. Power BI) · Screenshot-grounded, evidence-based reporting
 
 ---
 
