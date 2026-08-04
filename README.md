@@ -14,7 +14,7 @@
 
 ## About
 
-Data Analyst with 2.5+ years bridging CX operations and cloud analytics for e-commerce and fulfilment environments. I spent 18 months inside HP's PC support queue (via Concentrix Technologies), segmenting recurring failures down to model level and separating hardware defects from software regressions before escalating structured technical queries to engineering — before moving into a cloud analytics internship at **Full Stack Academy** to build the engineering layer underneath: Snowflake data marts, Databricks Medallion pipelines, a Python data-quality framework, and a live Power BI reporting layer bridged over Python/ODBC.
+Data Analyst with 2+ years in CX and technical-support operations, now building the data layer beneath the reporting. Eighteen months segmenting enterprise PC failures to SKU level at Concentrix, then six months on Snowflake marts, Databricks Medallion pipelines and Python data-quality frameworks — strongest where operations meet the warehouse: SLA breaches, carrier performance, fulfilment leakage.
 
 That order — operations first, architecture second — is deliberate. It means I ask what a number is going to change before I build the pipeline that produces it, and it's why the CX domain (SLA ageing, routing failures, handle-time patterns) reads as familiar territory rather than an abstraction layered on top of a query.
 
