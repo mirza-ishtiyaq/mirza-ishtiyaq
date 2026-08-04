@@ -160,7 +160,7 @@ Broader SQL, BI, and data-engineering fundamentals — each still a complete, ve
 |---|---|---|
 | **[Enterprise Sales Analytics Dashboard](https://github.com/mirza-ishtiyaq/PowerBI_Sales_analysis_dashboard)** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M in multi-year sales reconciled Power BI ↔ Excel to the cent; the project behind my Python/ODBC live-reporting bridge from the Full Stack Academy internship. |
 | **[Retail Data Quality & Executive Analytics Engine](https://github.com/mirza-ishtiyaq/python-data-quality-engine)** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline that deliberately avoided a fan-out join bug and caught 3 orphan transactions instead of silently absorbing them. |
-| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/Sales_Analysis.SQL)** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
+| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/sales-cohort-retention-analysis-mysql)** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
 | **[EcomDB — Enterprise SQL Analytics Suite](https://github.com/mirza-ishtiyaq/azure-synapse-enterprise-analytics)** | T-SQL · Azure Synapse · Microsoft Fabric | Five production business-question queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse/Fabric-specific gotchas. |
 
 ---
