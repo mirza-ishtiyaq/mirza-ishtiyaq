@@ -36,7 +36,7 @@ Every project below is held to one standard: **every claim in the write-up has t
 
 | Metric | Where It Came From |
 |---|---|
-| **$709.5K** spoilage loss quantified, traced to 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
+| **$709.5K** spoilage loss quantified — **$298K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
 | **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
 | **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
 | **49.35%** of tickets flagged urgent VIP-risk before they became churn | CX SLA Diagnostic Engine (DuckDB) |
