@@ -63,7 +63,7 @@ Every project below is held to one standard: **every claim in the write-up has t
 The three case studies below are the ones I'd point a recruiter to first — they map directly to the domain I'm targeting (e-commerce operations, supply chain, and CX analytics) and each carries a quantified, verified business outcome. Four more projects — SQL, BI, and data-quality work — are summarized further down in [Additional Projects](#additional-projects).
 
 ### 1. Pharmaceutical Cold-Chain Spoilage Analytics & SLA Claim Engine
-**[Repository →](https://github.com/mirza-ishtiyaq/snowflake-pharma-logistics-pipeline)** &nbsp; `Snowflake` `Python` `Open-Meteo REST API` `Power BI`
+**[📦 pharma-cold-chain-analytics](https://github.com/mirza-ishtiyaq/pharma-cold-chain-analytics)** &nbsp; `Snowflake` `Python` `Open-Meteo REST API` `Power BI`
 
 **Data Source:** 5,000 pharmaceutical shipment records across 5 Indian logistics hubs (Hyderabad, Mumbai, Delhi, Chennai, Bangalore), joined against real historical weather telemetry pulled live from the Open-Meteo Historical Weather REST API.
 
@@ -92,7 +92,7 @@ flowchart LR
 ---
 
 ### 2. E-Commerce Medallion Pipeline & Revenue Leakage Audit
-**[Repository →](https://github.com/mirza-ishtiyaq/databricks-medallion-architecture)** &nbsp; `Databricks` `Spark SQL` `Delta Lake` `Power BI`
+**[📦 ecommerce-medallion-pipeline](https://github.com/mirza-ishtiyaq/ecommerce-medallion-pipeline)** &nbsp; `Databricks` `Spark SQL` `Delta Lake` `Power BI`
 
 **Data Source:** The public [Brazilian E-Commerce (Olist) dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — ~99,000 real orders across customers, orders, items, products, sellers, and geolocation tables.
 
@@ -123,7 +123,7 @@ flowchart LR
 ---
 
 ### 3. CX Support Ticket Lifecycle & SLA Breach Diagnostic Engine
-**[Repository →](https://github.com/mirza-ishtiyaq/e-commerce-etl-pipeline)** &nbsp; `DuckDB` `Python (Faker, Pandas)` `SQL`
+**[📦 cx-ticket-lifecycle-engine](https://github.com/mirza-ishtiyaq/cx-ticket-lifecycle-engine)** &nbsp; `DuckDB` `Python (Faker, Pandas)` `SQL`
 
 **Data Source:** The FakeStore public REST API (real 20-SKU product catalog) plus a fully seeded synthetic transactional layer (`Faker.seed(42)`) generating **1,000,000 orders**, **1,000,000 support tickets**, and **50,000 customers** — deterministic and independently reproducible end-to-end.
 
@@ -158,10 +158,10 @@ Broader SQL, BI, and data-engineering fundamentals — each still a complete, ve
 
 | Project | Stack | Highlight |
 |---|---|---|
-| **[Enterprise Sales Analytics Dashboard](https://github.com/mirza-ishtiyaq/PowerBI_Sales_analysis_dashboard)** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M in multi-year sales reconciled Power BI ↔ Excel to the cent; the project behind my Python/ODBC live-reporting bridge from the Full Stack Academy internship. |
-| **[Retail Data Quality & Executive Analytics Engine](https://github.com/mirza-ishtiyaq/python-data-quality-engine)** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline that deliberately avoided a fan-out join bug and caught 3 orphan transactions instead of silently absorbing them. |
-| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/sales-cohort-retention-analysis-mysql)** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
-| **[EcomDB — Enterprise SQL Analytics Suite](https://github.com/mirza-ishtiyaq/azure-synapse-enterprise-analytics)** | T-SQL · Azure Synapse · Microsoft Fabric | Five production business-question queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse/Fabric-specific gotchas. |
+| **[Enterprise Sales Analytics Dashboard](https://github.com/mirza-ishtiyaq/enterprise-sales-analytics)** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M in multi-year sales reconciled Power BI ↔ Excel to the cent; the project behind my Python/ODBC live-reporting bridge from the Full Stack Academy internship. |
+| **[Retail Data Quality & Executive Analytics Engine](https://github.com/mirza-ishtiyaq/retail-data-quality-engine)** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline that deliberately avoided a fan-out join bug and caught 3 orphan transactions instead of silently absorbing them. |
+| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/sales-data-analysis-logic)** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
+| **[EcomDB — Enterprise SQL Analytics Suite](https://github.com/mirza-ishtiyaq/ecomdb-sql-analytics-suite)** | T-SQL · Azure Synapse · Microsoft Fabric | Five production business-question queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse/Fabric-specific gotchas. |
 
 ---
 
