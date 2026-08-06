@@ -24,10 +24,6 @@ strongest where operations meet the warehouse: SLA breaches, carrier
 performance, fulfilment leakage.
 
 
-I'd rather you catch me being honest about a weak result than impressed
-by a strong one I can't defend.
-
-
 ---
 
 ## Career Snapshot
