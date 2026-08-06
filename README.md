@@ -1,7 +1,7 @@
 <div align="center">
 
 # Mirza Ishtiyaq Baig
-### Data Analyst — CX Operations & E-Commerce Analytics
+### Data Analyst — Supply Chain & Service Operations Analytics
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mirzaishtiyaqbaig-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
 [![Email](https://img.shields.io/badge/Email-mirzaishtiyaqbaig1%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mirzaishtiyaqbaig1@gmail.com)
@@ -11,14 +11,18 @@
 </div>
 
 ---
-
 ## About
 
-Data Analyst with 2+ years in CX and technical-support operations, now building the data layer beneath the reporting. Eighteen months segmenting enterprise PC failures to SKU level at Concentrix, then six months on Snowflake marts, Databricks Medallion pipelines and Python data-quality frameworks — strongest where operations meet the warehouse: SLA breaches, carrier performance, fulfilment leakage.
+A 26-day shipment sat inside a 12.3-day average and nobody caught it.
+That's the job — finding the thing the dashboard is quietly hiding.
 
-That order — operations first, architecture second — is deliberate. It means I ask what a number is going to change before I build the pipeline that produces it, and it's why the CX domain (SLA ageing, routing failures, handle-time patterns) reads as familiar territory rather than an abstraction layered on top of a query.
+Two years in CX and technical-support operations, now building the data
+layer beneath the reporting. Eighteen months segmenting enterprise PC
+failures to SKU level at Concentrix, then six months on Snowflake marts,
+Databricks Medallion pipelines and Python data-quality frameworks —
+strongest where operations meet the warehouse: SLA breaches, carrier
+performance, fulfilment leakage.
 
-Every project below is held to one standard: **every claim in the write-up has to survive being checked against the underlying code and data.** That review turned up real issues across this portfolio — a revenue-undercounting join bug, an unproven "root cause" that didn't survive a chi-square test, a mislabeled dashboard state — and each one is documented as *found*, not smoothed over. That trail is in every project's README, not hidden.
 
 ---
 
@@ -27,7 +31,7 @@ Every project below is held to one standard: **every claim in the write-up has t
 | Role | Organization | Period | What I Actually Did |
 |---|---|---|---|
 | Data Analytics Intern — Cloud Architecture & Operations | Full Stack Academy | Feb 2026 – Jul 2026 | Built the Snowflake, Databricks, and Python projects below; bridged a macOS-hosted MySQL instance to Windows Power BI via a Python/ODBC connector, replacing manual exports with live reporting |
-| Data Analyst / Advisor II — CX Operations | Concentrix Technologies (HP account) | Jul 2024 – Dec 2025 | Segmented recurring failures across 3 PC product lines to model level; built Power Query / Power Pivot models on Microsoft Fabric; sustained 88–94% weekly resolution across 2,000+ cases |
+| Advisor II, Technical Support | Concentrix Technologies India | Jul 2024 – Dec 2025 | Segmented recurring failures across 3 PC product lines to model level; built Power Query / Power Pivot models on Microsoft Fabric; sustained 88–94% weekly resolution across 2,000+ cases |
 | eSupport Officer — Incident Management | IntouchCX (24-7 Intouch) | Aug 2023 – Mar 2024 | Continuous data validation inside Microsoft Dynamics 365; traced handle-time outliers to root cause; missed fewer than one SLA deadline per month |
 
 ---
@@ -36,7 +40,7 @@ Every project below is held to one standard: **every claim in the write-up has t
 
 | Metric | Where It Came From |
 |---|---|
-| **$708.5K** spoilage loss quantified, traced to 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
+| **$708.5K** spoilage loss quantified — **$298K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
 | **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
 | **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
 | **49.35%** of tickets flagged urgent VIP-risk before they became churn | CX SLA Diagnostic Engine (DuckDB) |
@@ -183,6 +187,17 @@ Medallion pipeline design · Snowflake data mart engineering · Azure Synapse mo
 Project datasets are **synthetic or public** — real client and transaction data from my CX roles is confidential and cannot be published. Weather data in the cold-chain project is real, pulled live from the Open-Meteo Historical Weather API. Synthetic datasets are generated with deliberate quality defects (mixed timestamp formats, duplicate keys, null fields, negative lead-times) so the cleaning layers solve problems that actually occur in production extracts.
 
 ---
+
+## Education & Certifications
+
+**B.Sc. Data Science** — Osmania University, Hyderabad, India · 2025
+
+**Certifications:**
+- Microsoft Fabric: Data Flows & Data Storage (2025)
+- SQL for Data Analysis — LinkedIn (2025)
+- Analyzing & Visualizing Data Using Excel — NASBA (2025)
+- Excel Data Management — PMI (2025)
+- Data Analytics Internship — Full Stack Academy (2026)
 
 ## Currently
 
