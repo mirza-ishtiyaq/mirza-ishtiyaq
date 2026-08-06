@@ -11,26 +11,18 @@
 </div>
 
 ---
-
-## About
-
 ## About
 
 A 26-day shipment sat inside a 12.3-day average and nobody caught it.
-That's the job — finding what the dashboard is quietly hiding.
+That's the job — finding the thing the dashboard is quietly hiding.
 
-Eighteen months at Concentrix segmenting enterprise PC failures to model
-level, then six months building Snowflake marts, Databricks Medallion
-pipelines and Python data-quality frameworks. Operations first,
-architecture second — deliberately. It means I ask what a number is
-going to change before I build the pipeline that produces it.
+Two years in CX and technical-support operations, now building the data
+layer beneath the reporting. Eighteen months segmenting enterprise PC
+failures to SKU level at Concentrix, then six months on Snowflake marts,
+Databricks Medallion pipelines and Python data-quality frameworks —
+strongest where operations meet the warehouse: SLA breaches, carrier
+performance, fulfilment leakage.
 
-**One standard runs through this portfolio: every claim in a write-up has
-to survive being checked against the underlying code and data.** That
-review turned up a revenue-undercounting join bug, a "root cause" that
-failed a chi-square test at p≈0.41, and a mislabeled dashboard state.
-Each is documented as *found*, not smoothed over. That trail is in every
-project README.
 
 I'd rather you catch me being honest about a weak result than impressed
 by a strong one I can't defend.
