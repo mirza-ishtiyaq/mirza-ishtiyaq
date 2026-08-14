@@ -17,6 +17,8 @@
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Data Visualization](https://img.shields.io/badge/Data_Visualization-E97627?style=flat-square&logo=tableau&logoColor=white)
+![ServiceNow](https://img.shields.io/badge/ServiceNow-62D84E?style=flat-square&logo=servicenow&logoColor=white)
 
 </div>
 
@@ -27,12 +29,13 @@
 A 26-day shipment sat inside a 12.3-day average and nobody caught it.
 That's the job — finding the thing the dashboard is quietly hiding.
 
-Two years in CX and technical-support operations, now building the data
-layer beneath the reporting. Eighteen months segmenting enterprise PC
-failures to SKU level at Concentrix, then six months on Snowflake marts,
-Databricks Medallion pipelines and Python data-quality frameworks —
-strongest where operations meet the warehouse: SLA breaches, carrier
-performance, fulfilment leakage.
+Two years of cross-functional CX and technical-support operations, now
+building the data layer beneath the reporting. Eighteen months segmenting
+enterprise PC failures to SKU level at Concentrix, then six months on
+Snowflake data warehousing, Databricks Medallion data pipelines and Python
+data-quality frameworks — strongest where operations meet the warehouse:
+SLA governance, carrier performance, KPI design and fulfilment leakage.
+Every project below pairs data storytelling with a verifiable business outcome.
 
 ---
 
@@ -95,11 +98,11 @@ deliverable behind it — not before.
 | Layer | Tools |
 |---|---|
 | **Cloud Platforms** | Snowflake · Databricks (Delta Lake) · Azure Synapse Analytics · Microsoft Fabric |
-| **Architecture** | Medallion Architecture (Bronze/Silver/Gold) · Star Schema · ETL/ELT Pipelines |
-| **SQL** | Advanced SQL (CTEs, Window Functions) · T-SQL · Spark SQL · MySQL 8.0 · DuckDB |
+| **Data Warehousing & Architecture** | Medallion Architecture (Bronze/Silver/Gold) · Star Schema · Dimensional Modelling · ETL/ELT Data Pipelines |
+| **SQL & Data** | Advanced SQL (CTEs, Window Functions) · T-SQL · Spark SQL · MySQL 8.0 · DuckDB · Data Cleaning · Exploratory Data Analysis (EDA) |
 | **Python** | Pandas · NumPy · Matplotlib · REST API Ingestion · Faker (synthetic data) |
-| **BI & Reporting** | Power BI · DAX · Power Query · Power Pivot · Exception Reporting |
-| **CX Domain** | Microsoft Dynamics 365 · SLA Governance · Case Telemetry · Ticket Lifecycle Analytics |
+| **BI & Reporting** | Power BI · DAX · Power Query · Power Pivot · Data Visualization · Automated Reporting · KPI Design |
+| **CX & Operations Domain** | Microsoft Dynamics 365 · ServiceNow · SLA Governance · Case Telemetry · Ticket Lifecycle Analytics |
 
 ---
 
@@ -200,15 +203,15 @@ flowchart LR
 ## Domain Focus
 
 **CX & Operations Analytics**
-SLA governance · case telemetry · ticket lifecycle reporting · handle-time analysis · CRM data quality · Dynamics 365
+SLA governance · case telemetry · ticket lifecycle reporting · handle-time analysis · cohort analysis · CRM data quality · Dynamics 365 · ServiceNow
 
-**Business Analysis & Process Improvement:** requirements translation · stakeholder communication · root cause analysis · process documentation
+**Business Analysis & Process Improvement:** requirements translation · stakeholder communication · root cause analysis · process documentation · data storytelling · cross-functional collaboration
 
 **Supply Chain & Logistics Analytics**
-Cold-chain risk modelling · transit delay analytics · order fulfilment analytics · 3PL performance reporting
+Cold-chain risk modelling · transit delay analytics · order fulfilment analytics · 3PL performance reporting · KPI tracking
 
 **Cloud Data Architecture**
-Medallion pipeline design · Snowflake data mart engineering · Azure Synapse modelling · Delta Lake · star schema design
+Medallion pipeline design · data warehousing · Snowflake data mart engineering · Azure Synapse modelling · Delta Lake · star schema design · data governance · data integrity
 
 ---
 
@@ -233,7 +236,7 @@ Broader SQL, BI, and data-engineering fundamentals — each still a complete, ve
 |---|---|---|
 | **Enterprise Sales Analytics Dashboard** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M in multi-year sales reconciled Power BI ↔ Excel to the cent; the project behind my Python/ODBC live-reporting bridge from the Full Stack Academy internship. |
 | **Retail Data Quality & Executive Analytics Engine** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline that deliberately avoided a fan-out join bug and caught 3 orphan transactions instead of silently absorbing them. |
-| **Sales Data Analysis & Business Logic** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
+| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/sales-data-analysis-logic)** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
 | **EcomDB — Enterprise SQL Analytics Suite** | T-SQL · Azure Synapse · Microsoft Fabric | Five production business-question queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse/Fabric-specific gotchas. |
 
 ---
