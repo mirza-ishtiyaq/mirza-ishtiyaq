@@ -1,16 +1,27 @@
 <div align="center">
 
 # Mirza Ishtiyaq Baig
-### Data Analyst — Supply Chain & Service Operations Analytics
+### Data & Operations Analyst · BI Developer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-mirzaishtiyaqbaig-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
-[![Email](https://img.shields.io/badge/Email-mirzaishtiyaqbaig1%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:mirzaishtiyaqbaig1@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-mirza--ishtiyaq-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/mirza-ishtiyaq)
-![Location](https://img.shields.io/badge/Location-Hyderabad%2C_India-4CAF50?style=flat-square)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mirzaishtiyaqbaig-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
+[![Email](https://img.shields.io/badge/Email-mirzaishtiyaqbaig1%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mirzaishtiyaqbaig1@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-mirza--ishtiyaq-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mirza-ishtiyaq)
+
+![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure_Synapse-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+![Delta Lake](https://img.shields.io/badge/Delta_Lake-003366?style=flat-square&logo=databricks&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
+![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
+![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 
 </div>
 
 ---
+
 ## About
 
 A 26-day shipment sat inside a 12.3-day average and nobody caught it.
@@ -23,6 +34,17 @@ Databricks Medallion pipelines and Python data-quality frameworks —
 strongest where operations meet the warehouse: SLA breaches, carrier
 performance, fulfilment leakage.
 
+---
+
+## Find What You Need
+
+| If you're hiring for... | Start here |
+|---|---|
+| **Data Analyst** | [Career Snapshot](#career-snapshot) → [Technical Stack: SQL & Data](#technical-stack) → [Automation & Process Improvement](#automation--process-improvement) |
+| **Business Analyst** | [Selected Operational Work](#selected-operational-work) → [Domain Focus](#domain-focus) → [Actively Building](#actively-building) |
+| **Operations Analyst** | [Career Snapshot](#career-snapshot) → [Automation & Process Improvement](#automation--process-improvement) |
+| **BI Developer** | [Technical Stack: BI & Reporting](#technical-stack) → [Actively Building](#actively-building) |
+| **Just want the numbers** | [Impact Snapshot](#impact-snapshot) |
 
 ---
 
@@ -30,22 +52,41 @@ performance, fulfilment leakage.
 
 | Role | Organization | Period | What I Actually Did |
 |---|---|---|---|
-| Data Analytics Intern — Cloud Architecture & Operations | Full Stack Academy | Feb 2026 – Jul 2026 | Built the Snowflake, Databricks, and Python projects below; bridged a macOS-hosted MySQL instance to Windows Power BI via a Python/ODBC connector, replacing manual exports with live reporting |
-| Advisor II, Technical Support | Concentrix Technologies India | Jul 2024 – Dec 2025 | Segmented recurring failures across 3 PC product lines to model level; built Power Query / Power Pivot models on Microsoft Fabric; sustained 88–94% weekly resolution across 2,000+ cases |
-| eSupport Officer — Incident Management | IntouchCX (24-7 Intouch) | Aug 2023 – Mar 2024 | Continuous data validation inside Microsoft Dynamics 365; traced handle-time outliers to root cause; missed fewer than one SLA deadline per month |
+| Data Analytics Intern — Cloud Architecture & Operations | Full Stack Academy | Feb 2026 – Jul 2026 | Built three Snowflake, Databricks and DuckDB pipelines end-to-end and bridged a macOS-hosted MySQL instance to Power BI via a Python/ODBC connector — replacing manual exports with live refresh — then trained incoming candidates in SQL and Power BI. |
+| Advisor II, Technical Support | Concentrix Technologies India | Jul 2024 – Dec 2025 | Automated the daily case-reporting workflow in Excel VBA and built Power BI dashboards on case volume and defect trends across consumer and commercial PC product lines — extracting from SQL Server and Microsoft Dynamics through Power Query and Power Pivot — to govern SLA attainment against a 98% target. |
+| eSupport Officer — Incident Management | IntouchCX (24-7 Intouch) | Aug 2023 – Mar 2024 | Extracted and triaged live ticket inventory hourly from ServiceNow across multiple chat queues, routing cases to the right resolver team and flagging backlog build-up before it reached an SLA breach. |
 
 ---
 
-## Impact Snapshot
+## Selected Operational Work
 
-| Metric | Where It Came From |
-|---|---|
-| **$708.5K** spoilage loss quantified — **$298K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
-| **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
-| **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
-| **49.35%** of tickets flagged urgent VIP-risk before they became churn | CX SLA Diagnostic Engine (DuckDB) |
-| **7** end-to-end analytics builds across Snowflake, Databricks, Synapse, MySQL, DuckDB & Python — 3 featured as core case studies below | This portfolio |
-| **3** real data/reporting bugs found and fixed under independent review | Not just built — checked |
+**Concentrix — Technical Support Operations (18 months)**
+Segmented recurring hardware failures across three consumer and commercial PC product lines to model level. Sustained 88–94% weekly resolution across 2,000+ cases while governing SLA attainment against a 98% target.
+
+**IntouchCX — Incident Management (8 months)**
+Ran continuous data validation on open-ticket inventory across multiple chat queues. Traced handle-time outliers to root cause and maintained fewer than one SLA deadline miss per month.
+
+---
+
+## Automation & Process Improvement
+
+**Excel VBA Case-Reporting Automation (Concentrix)**
+Automated the daily case-reporting workflow in Excel VBA, replacing a manual preparation sequence that previously consumed the first hour of every shift.
+
+**macOS → Power BI Live-Reporting Bridge (Full Stack Academy)**
+Built a Python/ODBC connector bridging a macOS-hosted MySQL instance to Power BI, replacing manual CSV exports with live dashboard refresh.
+
+---
+
+## Actively Building
+
+Real gaps against 2026 role requirements, closed deliberately rather than
+glossed over. An entry is added here only once there's a genuine, defensible
+deliverable behind it — not before.
+
+<!-- Entries added here as each deliverable is completed. Do not add
+     placeholder, aspirational, or "in progress" entries without a real
+     artefact behind them. -->
 
 ---
 
@@ -156,6 +197,34 @@ flowchart LR
 
 ---
 
+## Domain Focus
+
+**CX & Operations Analytics**
+SLA governance · case telemetry · ticket lifecycle reporting · handle-time analysis · CRM data quality · Dynamics 365
+
+**Business Analysis & Process Improvement:** requirements translation · stakeholder communication · root cause analysis · process documentation
+
+**Supply Chain & Logistics Analytics**
+Cold-chain risk modelling · transit delay analytics · order fulfilment analytics · 3PL performance reporting
+
+**Cloud Data Architecture**
+Medallion pipeline design · Snowflake data mart engineering · Azure Synapse modelling · Delta Lake · star schema design
+
+---
+
+## Impact Snapshot
+
+| Metric | Where It Came From |
+|---|---|
+| **$708.5K** spoilage loss quantified — **$298K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
+| **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
+| **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
+| **49.35%** of tickets flagged urgent VIP-risk before they became churn | CX SLA Diagnostic Engine (DuckDB) |
+| **7** end-to-end analytics builds across Snowflake, Databricks, Synapse, MySQL, DuckDB & Python — 3 featured as core case studies below | This portfolio |
+| **3** real data/reporting bugs found and fixed under independent review | Not just built — checked |
+
+---
+
 ## Additional Projects
 
 Broader SQL, BI, and data-engineering fundamentals — each still a complete, verified build, kept here in short form so the three case studies above stay the focus.
@@ -166,19 +235,6 @@ Broader SQL, BI, and data-engineering fundamentals — each still a complete, ve
 | **Retail Data Quality & Executive Analytics Engine** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline that deliberately avoided a fan-out join bug and caught 3 orphan transactions instead of silently absorbing them. |
 | **Sales Data Analysis & Business Logic** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
 | **EcomDB — Enterprise SQL Analytics Suite** | T-SQL · Azure Synapse · Microsoft Fabric | Five production business-question queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse/Fabric-specific gotchas. |
-
----
-
-## Domain Focus
-
-**CX & Operations Analytics**
-SLA governance · case telemetry · ticket lifecycle reporting · handle-time analysis · CRM data quality · Dynamics 365
-
-**Supply Chain & Logistics Analytics**
-Cold-chain risk modelling · transit delay analytics · order fulfilment analytics · 3PL performance reporting
-
-**Cloud Data Architecture**
-Medallion pipeline design · Snowflake data mart engineering · Azure Synapse modelling · Delta Lake · star schema design
 
 ---
 
@@ -199,14 +255,16 @@ Project datasets are **synthetic or public** — real client and transaction dat
 - Excel Data Management — PMI (2025)
 - Data Analytics Internship — Full Stack Academy (2026)
 
+---
+
 ## Currently
 
-Open to **Data Analyst**, **Business Analyst**, and **Data QA Analyst** roles — particularly in e-commerce operations, supply chain, and CX analytics.
+Targeting **Data Analyst**, **Business Analyst**, **Operations Analyst**, and **BI Developer** roles — particularly in e-commerce operations, supply chain, and CX analytics.
 
 ---
 
 ## Let's Connect
 
-- **LinkedIn:** [linkedin.com/in/mirzaishtiyaqbaig](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
-- **Email:** mirzaishtiyaqbaig1@gmail.com
-- **Location:** Hyderabad, India · Open to pan-India or remote roles
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mirzaishtiyaqbaig-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
+[![Email](https://img.shields.io/badge/Email-mirzaishtiyaqbaig1%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mirzaishtiyaqbaig1@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-mirza--ishtiyaq-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mirza-ishtiyaq)
