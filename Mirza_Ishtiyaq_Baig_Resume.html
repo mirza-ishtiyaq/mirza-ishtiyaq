@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mirza Ishtiyaq Baig - Resume</title>
+<style>
+  @page {
+    size: letter;
+    margin: 0.28in 0.38in;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1f2937;
+    background-color: #ffffff;
+    line-height: 1.24;
+    font-size: 8.4pt;
+  }
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #1e40af;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+  }
+  .name {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+  }
+  .headline {
+    font-size: 9.2pt;
+    font-weight: 600;
+    color: #2563eb;
+    margin-top: 1px;
+  }
+  .contact-bar {
+    margin-top: 2px;
+    font-size: 8pt;
+    color: #4b5563;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .contact-bar a {
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .section {
+    margin-bottom: 5px;
+  }
+  .section-title {
+    font-size: 9.2pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+  }
+  
+  .summary {
+    font-size: 8.2pt;
+    color: #334155;
+    text-align: justify;
+    line-height: 1.26;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 1.5px 6px;
+    font-size: 8.2pt;
+  }
+  .skill-cat {
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .skill-items {
+    color: #334155;
+  }
+
+  .item {
+    margin-bottom: 3.5px;
+  }
+  .item:last-child {
+    margin-bottom: 0;
+  }
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .item-title {
+    font-size: 8.7pt;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .item-org {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #2563eb;
+  }
+  .item-date {
+    font-size: 8pt;
+    font-weight: 600;
+    color: #475569;
+  }
+  .item-tech {
+    font-size: 7.6pt;
+    font-weight: 600;
+    color: #475569;
+    margin-top: 0.5px;
+    margin-bottom: 1px;
+  }
+
+  ul.bullets {
+    list-style-type: disc;
+    margin-left: 12px;
+    margin-top: 1px;
+  }
+  ul.bullets li {
+    font-size: 8.1pt;
+    color: #334155;
+    margin-bottom: 1px;
+    line-height: 1.22;
+  }
+  ul.bullets li strong {
+    color: #0f172a;
+  }
+
+  .edu-cert-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 10px;
+  }
+  .edu-box {
+    font-size: 8.1pt;
+  }
+  .cert-list {
+    list-style: disc;
+    margin-left: 12px;
+  }
+  .cert-list li {
+    font-size: 8pt;
+    color: #334155;
+    margin-bottom: 0.5px;
+    line-height: 1.2;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="name">Mirza Ishtiyaq Baig</div>
+    <div class="headline">Data Analyst · BI Developer · Data Science Graduate</div>
+    <div class="contact-bar">
+      <span>📍 Hyderabad, India</span>
+      <span>✉️ <a href="mailto:mirzaishtiyaqbaig1@gmail.com">mirzaishtiyaqbaig1@gmail.com</a></span>
+      <span>🔗 <a href="https://linkedin.com/in/mirzaishtiyaqbaig">linkedin.com/in/mirzaishtiyaqbaig</a></span>
+      <span>💻 <a href="https://github.com/mirza-ishtiyaq">github.com/mirza-ishtiyaq</a></span>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <div class="summary">
+      Recent <strong>B.Sc. Data Science</strong> graduate (2025) and <strong>Data Analyst / BI Developer</strong> with hands-on internship experience designing end-to-end cloud data pipelines (Snowflake, Databricks Medallion architecture, DuckDB), relational star schemas, and automated Power BI reporting. Skilled in advanced SQL (CTEs, Window Functions), Python (Pandas, NumPy, SQLAlchemy), and DAX measures to diagnose operational inefficiencies, uncover revenue leakage, and drive actionable business decisions.
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-grid">
+      <div class="skill-cat">Cloud Warehouses:</div>
+      <div class="skill-items">Snowflake, Databricks (Delta Lake), Azure Synapse Analytics, Microsoft Fabric, DuckDB</div>
+      <div class="skill-cat">SQL & Databases:</div>
+      <div class="skill-items">Advanced SQL (CTEs, Window Functions), MySQL 8.0, PostgreSQL, T-SQL, Spark SQL</div>
+      <div class="skill-cat">Python & Libraries:</div>
+      <div class="skill-items">Python (Pandas, NumPy, SQLAlchemy, Matplotlib, Seaborn, REST API Ingestion, Faker)</div>
+      <div class="skill-cat">BI & Visualization:</div>
+      <div class="skill-items">Power BI, DAX, Power Query, Power Pivot, Star Schema, Dimensional Modeling, KPI Design</div>
+      <div class="skill-cat">Engineering & Tools:</div>
+      <div class="skill-items">ETL/ELT Pipelines, Medallion Architecture (Bronze/Silver/Gold), Advanced Excel, Git/GitHub, VS Code</div>
+    </div>
+  </div>
+
+  <!-- INTERNSHIP EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Internship Experience</div>
+    
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Data Analytics Intern — Cloud Architecture & Operations</span>
+          <span class="item-org"> · Full Stack Academy</span>
+        </div>
+        <div class="item-date">Feb 2026 – Jul 2026</div>
+      </div>
+      <ul class="bullets">
+        <li><strong>Cloud ETL/ELT Pipelines:</strong> Designed and deployed multi-stage data pipelines across <strong>Snowflake</strong>, <strong>Databricks (Delta Lake)</strong>, and <strong>DuckDB</strong>, ingesting and transforming 1,000,000+ transactional and operational records.</li>
+        <li><strong>Automated BI Integration:</strong> Built a custom Python/ODBC connector bridging a macOS MySQL database directly to Power BI, eliminating manual CSV workflows and enabling live dashboard auto-refresh.</li>
+        <li><strong>Dimensional Modeling:</strong> Architected relational star schemas, dimension/fact tables, and optimized SQL analytical queries using CTEs and window functions to compute SLA metrics and revenue trends.</li>
+        <li><strong>Executive Reporting:</strong> Created interactive Power BI dashboards utilizing advanced DAX measures, dynamic KPI cards, and drill-through matrices to monitor fulfillment performance and support ticket lifecycles.</li>
+        <li><strong>Technical Mentorship:</strong> Conducted peer-learning workshops on SQL query optimization, data cleaning best practices, and Power BI visualization standards for incoming cohort members.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FEATURED PROJECTS -->
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">Pharmaceutical Cold-Chain Spoilage & Carrier SLA Recovery Engine</span>
+        <div class="item-date">2026</div>
+      </div>
+      <div class="item-tech">Snowflake SQL · Python (Pandas, REST API) · Power BI · Statistical Hypothesis Testing</div>
+      <ul class="bullets">
+        <li>Engineered a 3-layer Snowflake warehouse (RAW &rarr; CLEAN &rarr; BUSINESS) modeling 5,000 pharmaceutical shipments joined with real-time weather telemetry from Open-Meteo REST API across 5 major logistics hubs.</li>
+        <li>Surfaced <strong>$708,550 in YTD spoilage loss</strong> (5.94% spoilage rate) and isolated <strong>$298,750 in recoverable SLA claims</strong> concentrated across two major 3PL logistics carriers (Delhivery & FedEx).</li>
+        <li>Conducted chi-square hypothesis testing on origin temperature vs. transit delay to scientifically validate risk drivers prior to recommending packaging SOP updates.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">E-Commerce Fulfilment Medallion Pipeline & Revenue Leakage Audit</span>
+        <div class="item-date">2026</div>
+      </div>
+      <div class="item-tech">Databricks · Spark SQL · Delta Lake (ACID) · Power BI · Star Schema</div>
+      <ul class="bullets">
+        <li>Built an end-to-end Bronze &rarr; Silver &rarr; Gold Delta Lake pipeline on 99K+ Brazilian E-Commerce (Olist) records, migrating 90% of business logic and dimensional transformations upstream.</li>
+        <li>Surfaced <strong>$97.24K in trapped revenue leakage</strong> (8.12% of gross pipeline) in canceled/unavailable orders and isolated a <strong>26-day regional transit bottleneck</strong> in Rondônia vs. 12.3-day national baseline.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <span class="item-title">CX Support Ticket Lifecycle & SLA Breach Diagnostic Engine</span>
+        <div class="item-date">2026</div>
+      </div>
+      <div class="item-tech">DuckDB · Python (Faker, Pandas) · Advanced SQL (Window Functions) · Matplotlib</div>
+      <ul class="bullets">
+        <li>Constructed a deterministic synthetic pipeline generating <strong>1M orders</strong>, <strong>1M support tickets</strong>, and <strong>50K customers</strong> ($244.8M gross revenue) with byte-for-byte reproducibility.</li>
+        <li>Analyzed ticket lifecycles and classified <strong>49.35% of tickets as high-risk VIP breaches</strong> ($2,500+ LTV), designing automated escalation routing into a sub-4-hour priority resolution queue.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Education & Certifications</div>
+    <div class="edu-cert-grid">
+      <div class="edu-box">
+        <div class="item-title">Bachelor of Science (B.Sc.) in Data Science</div>
+        <div class="item-org">Osmania University, Hyderabad, India</div>
+        <div class="item-date">Graduated: 2025</div>
+      </div>
+      <div class="cert-box">
+        <ul class="cert-list">
+          <li><strong>Microsoft Fabric:</strong> Data Flows & Storage (2025)</li>
+          <li><strong>SQL for Data Analysis:</strong> LinkedIn Learning (2025)</li>
+          <li><strong>Data Analytics Internship:</strong> Full Stack Academy (2026)</li>
+          <li><strong>Excel Data Management:</strong> PMI & NASBA (2025)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
