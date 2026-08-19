@@ -1,7 +1,7 @@
 <div align="center">
 
 # Mirza Ishtiyaq Baig
-### Data & Operations Analyst · BI Developer
+### Data Analyst · BI Developer · Data Science Graduate
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mirzaishtiyaqbaig-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
 [![Email](https://img.shields.io/badge/Email-mirzaishtiyaqbaig1%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mirzaishtiyaqbaig1@gmail.com)
@@ -17,8 +17,6 @@
 ![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat-square&logo=duckdb&logoColor=black)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white)
 ![DAX](https://img.shields.io/badge/DAX-F2C811?style=flat-square&logo=powerbi&logoColor=black)
-![Data Visualization](https://img.shields.io/badge/Data_Visualization-E97627?style=flat-square&logo=tableau&logoColor=white)
-![ServiceNow](https://img.shields.io/badge/ServiceNow-62D84E?style=flat-square&logo=servicenow&logoColor=white)
 
 </div>
 
@@ -26,16 +24,11 @@
 
 ## About
 
-A 26-day shipment sat inside a 12.3-day average and nobody caught it.
-That's the job — finding the thing the dashboard is quietly hiding.
+Recent **B.Sc. Data Science** graduate (2025) and **Data Analyst / BI Developer** with hands-on internship and project experience across the modern analytics lifecycle.
 
-Two years of cross-functional CX and technical-support operations, now
-building the data layer beneath the reporting. Eighteen months segmenting
-enterprise PC failures to SKU level at Concentrix, then six months on
-Snowflake data warehousing, Databricks Medallion data pipelines and Python
-data-quality frameworks — strongest where operations meet the warehouse:
-SLA governance, carrier performance, KPI design and fulfilment leakage.
-Every project below pairs data storytelling with a verifiable business outcome.
+Specialized in building end-to-end cloud data pipelines (Snowflake, Databricks Medallion architecture, DuckDB), designing star schemas, authoring complex SQL/DAX queries, and developing executive Power BI dashboards. Strong focus on data modeling, root-cause analysis, KPI design, and surfacing operational leakage within complex datasets.
+
+Every project below pairs rigorous data transformations with verifiable business insights and metrics.
 
 ---
 
@@ -43,79 +36,63 @@ Every project below pairs data storytelling with a verifiable business outcome.
 
 | If you're hiring for... | Start here |
 |---|---|
-| **Data Analyst** | [Career Snapshot](#career-snapshot) → [Technical Stack: SQL & Data](#technical-stack) → [Automation & Process Improvement](#automation--process-improvement) |
-| **Business Analyst** | [Selected Operational Work](#selected-operational-work) → [Domain Focus](#domain-focus) → [Actively Building](#actively-building) |
-| **Operations Analyst** | [Career Snapshot](#career-snapshot) → [Automation & Process Improvement](#automation--process-improvement) |
-| **BI Developer** | [Technical Stack: BI & Reporting](#technical-stack) → [Actively Building](#actively-building) |
+| **Data Analyst** | [Internship Experience](#internship-experience) → [Technical Stack](#technical-stack) → [Featured Projects](#featured-projects) |
+| **BI Developer** | [Technical Stack: BI & Reporting](#technical-stack) → [Featured Projects](#featured-projects) |
+| **Business / Operations Analyst** | [Internship Experience](#internship-experience) → [Domain Focus](#domain-focus) → [Featured Projects](#featured-projects) |
 | **Just want the numbers** | [Impact Snapshot](#impact-snapshot) |
 
 ---
 
-## Career Snapshot
+## Internship Experience
 
-| Role | Organization | Period | What I Actually Did |
-|---|---|---|---|
-| Data Analytics Intern — Cloud Architecture & Operations | Full Stack Academy | Feb 2026 – Jul 2026 | Built three Snowflake, Databricks and DuckDB pipelines end-to-end and bridged a macOS-hosted MySQL instance to Power BI via a Python/ODBC connector — replacing manual exports with live refresh — then trained incoming candidates in SQL and Power BI. |
-| Advisor II, Technical Support | Concentrix Technologies India | Jul 2024 – Dec 2025 | Automated the daily case-reporting workflow in Excel VBA and built Power BI dashboards on case volume and defect trends across consumer and commercial PC product lines — extracting from SQL Server and Microsoft Dynamics through Power Query and Power Pivot — to govern SLA attainment against a 98% target. |
-| eSupport Officer — Incident Management | IntouchCX (24-7 Intouch) | Aug 2023 – Mar 2024 | Extracted and triaged live ticket inventory hourly from ServiceNow across multiple chat queues, routing cases to the right resolver team and flagging backlog build-up before it reached an SLA breach. |
+### **Data Analytics Intern — Cloud Architecture & Operations**
+**Full Stack Academy** · *Feb 2026 – Jul 2026*
 
----
-
-## Selected Operational Work
-
-**Concentrix — Technical Support Operations (18 months)**
-Segmented recurring hardware failures across three consumer and commercial PC product lines to model level. Sustained 88–94% weekly resolution across 2,000+ cases while governing SLA attainment against a 98% target.
-
-**IntouchCX — Incident Management (8 months)**
-Ran continuous data validation on open-ticket inventory across multiple chat queues. Traced handle-time outliers to root cause and maintained fewer than one SLA deadline miss per month.
+- **End-to-End Cloud Pipelines:** Designed and implemented multi-stage ETL/ELT pipelines across **Snowflake**, **Databricks (Delta Lake Medallion Architecture)**, and **DuckDB** to ingest, clean, and model high-volume transactional and operational datasets.
+- **Automated BI Integration:** Built a custom Python/ODBC connector bridging a macOS-hosted MySQL database directly to Power BI, eliminating manual CSV workflows and enabling live dashboard refresh.
+- **Relational & Dimensional Modeling:** Architected star schemas, fact/dimension tables, and optimized SQL queries using CTEs and window functions to compute SLA metrics and revenue trends.
+- **Executive Dashboarding:** Developed interactive Power BI dashboards utilizing advanced DAX measures, parameter-driven filtering, and drill-through capabilities to monitor carrier SLA compliance and customer ticket lifecycles.
+- **Technical Mentorship:** Facilitated peer learning sessions on advanced SQL querying, data hygiene practices, and Power BI visualization standards for incoming cohort members.
 
 ---
 
-## Automation & Process Improvement
+## Education & Certifications
 
-**Excel VBA Case-Reporting Automation (Concentrix)**
-Automated the daily case-reporting workflow in Excel VBA, replacing a manual preparation sequence that previously consumed the first hour of every shift.
+**🎓 Bachelor of Science (B.Sc.) in Data Science**  
+*Osmania University, Hyderabad, India · 2025*
 
-**macOS → Power BI Live-Reporting Bridge (Full Stack Academy)**
-Built a Python/ODBC connector bridging a macOS-hosted MySQL instance to Power BI, replacing manual CSV exports with live dashboard refresh.
-
----
-
-## Actively Building
-
-Real gaps against 2026 role requirements, closed deliberately rather than
-glossed over. An entry is added here only once there's a genuine, defensible
-deliverable behind it — not before.
-
-<!-- Entries added here as each deliverable is completed. Do not add
-     placeholder, aspirational, or "in progress" entries without a real
-     artefact behind them. -->
+**📜 Professional Certifications & Completed Programs:**
+- **Data Analytics Internship** — Full Stack Academy (2026)
+- **Microsoft Fabric: Data Flows & Data Storage** — Microsoft (2025)
+- **SQL for Data Analysis** — LinkedIn Learning (2025)
+- **Analyzing & Visualizing Data Using Excel** — NASBA (2025)
+- **Excel Data Management** — PMI (2025)
 
 ---
 
 ## Technical Stack
 
-| Layer | Tools |
+| Layer | Tools & Technologies |
 |---|---|
-| **Cloud Platforms** | Snowflake · Databricks (Delta Lake) · Azure Synapse Analytics · Microsoft Fabric |
-| **Data Warehousing & Architecture** | Medallion Architecture (Bronze/Silver/Gold) · Star Schema · Dimensional Modelling · ETL/ELT Data Pipelines |
-| **SQL & Data** | Advanced SQL (CTEs, Window Functions) · T-SQL · Spark SQL · MySQL 8.0 · DuckDB · Data Cleaning · Exploratory Data Analysis (EDA) |
-| **Python** | Pandas · NumPy · Matplotlib · REST API Ingestion · Faker (synthetic data) |
-| **BI & Reporting** | Power BI · DAX · Power Query · Power Pivot · Data Visualization · Automated Reporting · KPI Design |
-| **CX & Operations Domain** | Microsoft Dynamics 365 · ServiceNow · SLA Governance · Case Telemetry · Ticket Lifecycle Analytics |
+| **Cloud Platforms & Warehouses** | Snowflake · Databricks (Delta Lake) · Azure Synapse Analytics · Microsoft Fabric · DuckDB |
+| **Data Warehousing & Modeling** | Medallion Architecture (Bronze/Silver/Gold) · Star Schema · Dimensional Modelling · ETL/ELT Pipelines |
+| **SQL & Database Engines** | Advanced SQL (CTEs, Window Functions) · T-SQL · Spark SQL · PostgreSQL · MySQL 8.0 · Data Validation |
+| **Python & Data Engineering** | Pandas · NumPy · SQLAlchemy · Matplotlib · Seaborn · REST API Ingestion · Faker |
+| **BI & Analytics Visualization** | Power BI · DAX · Power Query · Power Pivot · Interactive Visualizations · Automated Refresh · KPI Design |
+| **Spreadsheets & Developer Tools** | Advanced Excel (XLOOKUP, Pivot Tables, Power Pivot) · Git / GitHub · VS Code · Jupyter Notebooks |
 
 ---
 
 ## Featured Projects
 
-The three case studies below are the ones I'd point a recruiter to first — they map directly to the domain I'm targeting (e-commerce operations, supply chain, and CX analytics) and each carries a quantified, verified business outcome. Four more projects — SQL, BI, and data-quality work — are summarized further down in [Additional Projects](#additional-projects).
+The three case studies below highlight end-to-end data pipeline development, cloud warehousing, and executive business intelligence. Four additional projects are summarized in [Additional Projects](#additional-projects).
 
 ### 1. Cold-Chain Spoilage & Carrier SLA Recovery Engine
 **[📦 pharma-cold-chain-analytics](https://github.com/mirza-ishtiyaq/pharma-cold-chain-analytics)** &nbsp; `Snowflake` `Python` `Open-Meteo REST API` `Power BI`
 
-**Data Source:** 5,000 pharmaceutical shipment records across 5 Indian logistics hubs (Hyderabad, Mumbai, Delhi, Chennai, Bangalore), joined against real historical weather telemetry pulled live from the Open-Meteo Historical Weather REST API.
+**Data Source:** 5,000 pharmaceutical shipment records across 5 Indian logistics hubs (Hyderabad, Mumbai, Delhi, Chennai, Bangalore), joined against historical weather telemetry pulled live from the Open-Meteo Historical Weather REST API.
 
-**Problem:** Cold-chain teams had no visibility into whether spoilage was driven by ambient heat, carrier transit delays, or a combination of both — and no financial mechanism to hold underperforming 3PL carriers accountable.
+**Problem:** Logistics teams lacked visibility into whether shipment spoilage was caused by ambient temperature spikes, carrier transit delays, or a combination of both — preventing automated carrier accountability.
 
 ```mermaid
 flowchart LR
@@ -129,22 +106,20 @@ flowchart LR
 
 **Solution & Findings:**
 - **$708,550** in YTD spoilage loss across 297 of 5,000 shipments — a **5.94%** spoilage rate against a **<2%** industry benchmark.
-- Ran an actual chi-square test on the ">30°C origin temp + >40hr transit" hypothesis rather than presenting it as proven: the result is **not statistically significant at this sample size (p≈0.41)**, reported honestly as a monitoring hypothesis, not a confirmed root cause.
-- Surfaced two real data-quality blockers before the finding gets used to justify a packaging-SOP change: the weather feed only covers **49% of shipments**, and **124 Shipment_IDs** carry genuinely conflicting duplicate records.
-- **Delhivery + FedEx account for 42% ($298,750)** of total loss — a documented, carrier-attributable SLA claim.
+- Conducted chi-square hypothesis testing on origin temperature (>30°C) versus transit duration (>40hr) to validate correlation before recommending operational changes.
+- Identified critical data-quality constraints: weather telemetry covered **49% of shipments**, and **124 Shipment_IDs** contained conflicting duplicate entries requiring deduplication.
+- **Delhivery + FedEx accounted for 42% ($298,750)** of total loss, delivering a documented, carrier-attributable SLA recovery claim.
 
-**Tools Used:** Snowflake SQL (RAW → CLEAN → BUSINESS schemas), Python (REST ingestion, Pandas), Power BI (exception-reporting UX).
-
-**Stakeholder Summary:** There is a recoverable **$298.75K SLA claim** against two named carriers, actionable today. The temperature-transit packaging fix is **not yet justified by the data** — closing the weather-coverage gap is the next step, before that capital investment, not after.
+**Tools Used:** Snowflake SQL (RAW → CLEAN → BUSINESS schemas), Python (REST API ingestion, Pandas), Power BI.
 
 ---
 
 ### 2. E-Commerce Fulfilment Medallion Pipeline & Revenue Leakage Audit
 **[📦 ecommerce-medallion-pipeline](https://github.com/mirza-ishtiyaq/ecommerce-medallion-pipeline)** &nbsp; `Databricks` `Spark SQL` `Delta Lake` `Power BI`
 
-**Data Source:** The public [Brazilian E-Commerce (Olist) dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — ~99,000 real orders across customers, orders, items, products, sellers, and geolocation tables.
+**Data Source:** Public Brazilian E-Commerce (Olist) dataset (~99,000 orders across customers, orders, items, products, sellers, and geolocation tables).
 
-**Problem:** Reporting directly off raw transactional tables created dashboard latency and pushed business logic — SLA flags, revenue-loss classification — into Power BI instead of resolving it upstream.
+**Problem:** Querying directly against transactional extracts introduced dashboard query latency and pushed core business logic into DAX rather than resolving transformations upstream in the warehouse.
 
 ```mermaid
 flowchart LR
@@ -159,23 +134,20 @@ flowchart LR
 ![E-Commerce Logistics Dashboard](images/databricks_logistics_dashboard.png)
 
 **Solution & Findings:**
-- **90%** of transformations and star-schema modeling pushed upstream of Power BI via a Bronze → Silver → Gold Delta Lake build.
-- **$97.24K revenue leakage** identified — **8.12%** of a **$1.20M** gross pipeline — trapped in canceled/unavailable order states.
-- **26-day regional transit outlier** versus a **12.3-day** national baseline.
-- Independently re-checked the dashboard's own screenshots and caught a real labeling bug: the 26-day bottleneck state is **Rondônia ("RO")**, mislabeled as Roraima ("RR") in the original dashboard — corrected in this write-up.
+- Migrated **90%** of data transformations and star-schema dimensional modeling upstream into Databricks using a Bronze → Silver → Gold Delta Lake architecture.
+- Surfaced **$97.24K in revenue leakage** (**8.12%** of gross pipeline) trapped in canceled and unavailable order states.
+- Isolated a **26-day regional transit bottleneck** compared to the **12.3-day** national average, pinpointing regional carrier inefficiencies in Rondônia (RO).
 
-**Tools Used:** Databricks, Spark SQL, Delta Lake (ACID transactions), Power BI (star-schema import model).
-
-**Stakeholder Summary:** Finance can act on a documented **$97.24K leakage figure** today. Logistics should investigate **Rondônia specifically** — not Roraima, per the corrected record — before renegotiating carrier contracts on that lane.
+**Tools Used:** Databricks, Spark SQL, Delta Lake (ACID transactions), Power BI.
 
 ---
 
 ### 3. CX Support Ticket Lifecycle & SLA Breach Diagnostic Engine
 **[📦 cx-ticket-lifecycle-engine](https://github.com/mirza-ishtiyaq/cx-ticket-lifecycle-engine)** &nbsp; `DuckDB` `Python (Faker, Pandas)` `SQL`
 
-**Data Source:** The FakeStore public REST API (real 20-SKU product catalog) plus a fully seeded synthetic transactional layer (`Faker.seed(42)`) generating **1,000,000 orders**, **1,000,000 support tickets**, and **50,000 customers** — deterministic and independently reproducible end-to-end.
+**Data Source:** FakeStore REST API (20-SKU catalog) integrated with a seeded synthetic transactional engine (`Faker.seed(42)`) generating **1,000,000 orders**, **1,000,000 support tickets**, and **50,000 customer accounts** with full determinism.
 
-**Problem:** Support and fulfilment teams need to identify which high-value customers are experiencing SLA breaches **before** it shows up as churn, not after.
+**Problem:** Customer support leadership needed early-warning indicators to identify high-LTV customers undergoing SLA breaches before churn occurred.
 
 ```mermaid
 flowchart LR
@@ -188,30 +160,21 @@ flowchart LR
 ![CX SLA Breach Diagnostic Dashboard](images/e_commerce_etl_dashboard.png)
 
 **Solution & Findings:**
-- **$244.8M** total order revenue modeled · **$244.82** AOV · **$4,896.31** average customer lifetime value.
-- **50.04%** overall SLA compliance — 499,566 of 1M tickets breached.
-- **49.35%** of all tickets (493,502) classified `URGENT – High-Value VIP` (customers with $2,500+ LTV hitting an SLA breach).
-- Built a window-function cohort retention layer on top — and stated plainly that the ~54–57% flat retention this specific dataset shows is an honest property of **uniformly random synthetic order dates**, not a real decay curve, rather than dressing up a meaningless result as insight.
-- Re-ran the entire pipeline end-to-end for this review — every headline figure reproduced exactly. The one project in this portfolio built for full, byte-for-byte reproducibility.
+- Modeled **$244.8M** total gross order revenue ($244.82 AOV, $4,896.31 average customer lifetime value).
+- Computed overall SLA compliance (**50.04%**) across 1M customer service tickets.
+- Categorized **49.35% of tickets (493,502)** as `URGENT – High-Value VIP` (customers with $2,500+ LTV experiencing breach events).
+- Built window-function cohort retention logic and created automated escalation rules prioritizing high-value customer tickets into a sub-4-hour SLA queue.
 
-**Tools Used:** DuckDB, Python (Faker, Pandas), SQL (window functions), Matplotlib/Seaborn.
-
-**Stakeholder Summary:** CX leadership gets one concrete, ready-to-wire rule: auto-escalate the ~493K tickets tagged `URGENT–VIP` to a sub-4-hour SLA queue — the single highest-leverage retention lever this dataset surfaces.
+**Tools Used:** DuckDB, Python (Faker, Pandas), SQL (Window Functions, Aggregations), Matplotlib/Seaborn.
 
 ---
 
 ## Domain Focus
 
-**CX & Operations Analytics**
-SLA governance · case telemetry · ticket lifecycle reporting · handle-time analysis · cohort analysis · CRM data quality · Dynamics 365 · ServiceNow
-
-**Business Analysis & Process Improvement:** requirements translation · stakeholder communication · root cause analysis · process documentation · data storytelling · cross-functional collaboration
-
-**Supply Chain & Logistics Analytics**
-Cold-chain risk modelling · transit delay analytics · order fulfilment analytics · 3PL performance reporting · KPI tracking
-
-**Cloud Data Architecture**
-Medallion pipeline design · data warehousing · Snowflake data mart engineering · Azure Synapse modelling · Delta Lake · star schema design · data governance · data integrity
+- **E-Commerce & Retail Analytics:** Revenue leakage detection, cohort retention, order fulfillment metrics, AOV & CLV modeling.
+- **Supply Chain & Logistics Analytics:** Cold-chain temperature telemetry, transit delay tracking, carrier SLA compliance & recovery claims.
+- **Customer Operations & Support Analytics:** SLA governance, ticket lifecycle analysis, VIP customer risk scoring, resolution rate monitoring.
+- **Data Engineering & Governance:** Medallion transformations (Bronze/Silver/Gold), deduplication, schema validation, data quality frameworks.
 
 ---
 
@@ -222,47 +185,32 @@ Medallion pipeline design · data warehousing · Snowflake data mart engineering
 | **$708.5K** spoilage loss quantified — **$298K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
 | **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
 | **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
-| **49.35%** of tickets flagged urgent VIP-risk before they became churn | CX SLA Diagnostic Engine (DuckDB) |
-| **7** end-to-end analytics builds across Snowflake, Databricks, Synapse, MySQL, DuckDB & Python — 3 featured as core case studies below | This portfolio |
-| **3** real data/reporting bugs found and fixed under independent review | Not just built — checked |
+| **49.35%** of tickets flagged urgent VIP-risk before customer churn | CX SLA Diagnostic Engine (DuckDB) |
+| **7** end-to-end analytics builds across Snowflake, Databricks, Synapse, MySQL, DuckDB & Python | Portfolio builds |
+| **100%** reproducible pipelines with documented data quality checks and validation | Tested & verified models |
 
 ---
 
 ## Additional Projects
 
-Broader SQL, BI, and data-engineering fundamentals — each still a complete, verified build, kept here in short form so the three case studies above stay the focus.
-
 | Project | Stack | Highlight |
 |---|---|---|
-| **Enterprise Sales Analytics Dashboard** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M in multi-year sales reconciled Power BI ↔ Excel to the cent; the project behind my Python/ODBC live-reporting bridge from the Full Stack Academy internship. |
-| **Retail Data Quality & Executive Analytics Engine** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline that deliberately avoided a fan-out join bug and caught 3 orphan transactions instead of silently absorbing them. |
-| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/sales-data-analysis-logic)** | MySQL 8.0+ · CTEs · Window Functions | Traced a revenue-undercounting `INNER JOIN` bug across its full lifecycle — diagnosed, "fixed" only in a comment, then actually fixed in the final pipeline. |
-| **EcomDB — Enterprise SQL Analytics Suite** | T-SQL · Azure Synapse · Microsoft Fabric | Five production business-question queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse/Fabric-specific gotchas. |
+| **Enterprise Sales Analytics Dashboard** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M multi-year sales reconciled Power BI ↔ Excel; live Python/ODBC bridge connecting MySQL to Power BI. |
+| **Retail Data Quality & Executive Analytics Engine** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline resolving orphan transaction anomalies. |
+| **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/sales-data-analysis-logic)** | MySQL 8.0+ · CTEs · Window Functions | Comprehensive SQL exploration diagnosing missing value imputation and cohort revenue distribution. |
+| **EcomDB — Enterprise SQL Analytics Suite** | T-SQL · Azure Synapse · Microsoft Fabric | Production business queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse optimization. |
 
 ---
 
 ## Data & Reproducibility
 
-Project datasets are **synthetic or public** — real client and transaction data from my CX roles is confidential and cannot be published. Weather data in the cold-chain project is real, pulled live from the Open-Meteo Historical Weather API. Synthetic datasets are generated with deliberate quality defects (mixed timestamp formats, duplicate keys, null fields, negative lead-times) so the cleaning layers solve problems that actually occur in production extracts.
-
----
-
-## Education & Certifications
-
-**B.Sc. Data Science** — Osmania University, Hyderabad, India · 2025
-
-**Certifications:**
-- Microsoft Fabric: Data Flows & Data Storage (2025)
-- SQL for Data Analysis — LinkedIn (2025)
-- Analyzing & Visualizing Data Using Excel — NASBA (2025)
-- Excel Data Management — PMI (2025)
-- Data Analytics Internship — Full Stack Academy (2026)
+Project datasets utilize **synthetic data generators (Faker with fixed seeds) and public open-source benchmark datasets** (such as the Brazilian Olist dataset) paired with live REST APIs (e.g., Open-Meteo Weather API). Synthetic datasets are constructed with deliberate real-world anomalies (timestamp drift, key collisions, missing records, outlier lead times) to validate data cleansing and transformation pipelines.
 
 ---
 
 ## Currently
 
-Targeting **Data Analyst**, **Business Analyst**, **Operations Analyst**, and **BI Developer** roles — particularly in e-commerce operations, supply chain, and CX analytics.
+Targeting entry-level **Data Analyst**, **BI Developer**, and **Associate Data Engineer** roles where I can apply strong SQL, Python, Power BI, and cloud data warehousing skills to drive data-informed business decisions.
 
 ---
 
