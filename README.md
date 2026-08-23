@@ -9,6 +9,7 @@
 
 ![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)
 ![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=flat-square&logo=databricks&logoColor=white)
+![Microsoft Fabric](https://img.shields.io/badge/Microsoft_Fabric-00BCF2?style=flat-square&logo=microsoft&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white)
@@ -24,9 +25,9 @@
 
 ## About
 
-Recent **B.Sc. Data Science** graduate (2025) and **Data Analyst / BI Developer** with hands-on internship and project experience across the modern analytics lifecycle.
+**Data Analyst / BI Developer** with a B.Sc. in Data Science and 6 months of internship experience building production-grade analytics pipelines on **Snowflake**, **Databricks**, **Microsoft Fabric**, and **DuckDB**.
 
-Specialized in building end-to-end cloud data pipelines (Snowflake, Databricks Medallion architecture, DuckDB), designing star schemas, authoring complex SQL/DAX queries, and developing executive Power BI dashboards. Strong focus on data modeling, root-cause analysis, KPI design, and surfacing operational leakage within complex datasets.
+I specialize in Kimball-style star schemas, end-to-end cloud ELT pipelines, advanced SQL/DAX, and executive Power BI dashboards. My work focuses on quantifying business impact — surfacing **$708K in supply-chain losses**, **$97K in revenue leakage**, and building **Row-Level Security models** on real government open data.
 
 Every project below pairs rigorous data transformations with verifiable business insights and metrics.
 
@@ -85,13 +86,40 @@ Every project below pairs rigorous data transformations with verifiable business
 
 ## Featured Projects
 
-The three case studies below highlight end-to-end data pipeline development, cloud warehousing, and executive business intelligence. Four additional projects are summarized in [Additional Projects](#additional-projects).
+Four end-to-end case studies spanning real government open data, pharmaceutical logistics, e-commerce revenue operations, and customer lifecycle analytics. Additional projects are summarized in [Additional Projects](#additional-projects).
 
-### 1. Cold-Chain Spoilage & Carrier SLA Recovery Engine
+### 1. Dubai Real Estate Enterprise BI Pipeline
+**[🏗️ dubai-real-estate-analytics](https://github.com/mirza-ishtiyaq/dubai-real-estate-analytics)** &nbsp; `Snowflake` `Microsoft Fabric` `Power BI` `Python` `DAX` `Row-Level Security`
+
+**Data Source:** 140,000+ real property transactions from the [Dubai Land Department (DLD)](https://dubailand.gov.ae/en/open-data/real-estate-data/) government open data portal — not synthetic, not seeded.
+
+**Problem:** Raw DLD CSV exports needed to be transformed into a governed, enterprise-grade data warehouse with proper dimensional modeling, automated ingestion, and role-based dashboard access.
+
+```mermaid
+flowchart LR
+    A["DLD Open Data\n(CSV Export)"] --> B["Snowflake RAW Layer\n(Staging Table)"]
+    B --> C["Snowflake DW Layer\n(Star Schema)"]
+    C --> D["Microsoft Fabric\n(Semantic Model + RLS)"]
+    D --> E["Power BI Dashboard\n(Multi-Page Executive Report)"]
+```
+
+![Dubai Real Estate Analytics Dashboard](images/dubai_real_estate_dashboard.png)
+
+**Solution & Findings:**
+- Designed a **Kimball star schema** with **5 dimension tables** and **1 fact table** — every table has documented grain, source, and cleaning rationale in SQL comments.
+- Built a **Python incremental loader** using Snowflake PUT + COPY INTO for efficient bulk ingestion with BOM-aware CSV parsing.
+- Implemented **Row-Level Security (RLS)** in Microsoft Fabric via a DAX bridge table, enabling multi-tenant dashboard access.
+- Made deliberate, documented data modeling decisions: dropped 3 columns (50–70% null), separated two types of null in DIM_ROOMS (structural N/A vs. data capture gap), used TRY_TO_* defensive casts throughout.
+- Covered **272 geographic areas**, **140K+ transaction line-items**, and all property types across Dubai's real estate market.
+
+**Tools Used:** Snowflake SQL (star schema DDL), Python (snowflake-connector-python, Pandas), Microsoft Fabric (DirectQuery semantic model), Power BI (DAX measures, RLS, custom theme).
+
+---
+
+### 2. Cold-Chain Spoilage & Carrier SLA Recovery Engine
 **[📦 pharma-cold-chain-analytics](https://github.com/mirza-ishtiyaq/pharma-cold-chain-analytics)** &nbsp; `Snowflake` `Python` `Open-Meteo REST API` `Power BI`
 
 **Data Source:** 5,000 pharmaceutical shipment records across 5 Indian logistics hubs (Hyderabad, Mumbai, Delhi, Chennai, Bangalore), joined against historical weather telemetry pulled live from the Open-Meteo Historical Weather REST API.
-
 **Problem:** Logistics teams lacked visibility into whether shipment spoilage was caused by ambient temperature spikes, carrier transit delays, or a combination of both — preventing automated carrier accountability.
 
 ```mermaid
@@ -114,7 +142,7 @@ flowchart LR
 
 ---
 
-### 2. E-Commerce Fulfilment Medallion Pipeline & Revenue Leakage Audit
+### 3. E-Commerce Fulfilment Medallion Pipeline & Revenue Leakage Audit
 **[📦 ecommerce-medallion-pipeline](https://github.com/mirza-ishtiyaq/ecommerce-medallion-pipeline)** &nbsp; `Databricks` `Spark SQL` `Delta Lake` `Power BI`
 
 **Data Source:** Public Brazilian E-Commerce (Olist) dataset (~99,000 orders across customers, orders, items, products, sellers, and geolocation tables).
@@ -142,7 +170,7 @@ flowchart LR
 
 ---
 
-### 3. CX Support Ticket Lifecycle & SLA Breach Diagnostic Engine
+### 4. CX Support Ticket Lifecycle & SLA Breach Diagnostic Engine
 **[📦 cx-ticket-lifecycle-engine](https://github.com/mirza-ishtiyaq/cx-ticket-lifecycle-engine)** &nbsp; `DuckDB` `Python (Faker, Pandas)` `SQL`
 
 **Data Source:** FakeStore REST API (20-SKU catalog) integrated with a seeded synthetic transactional engine (`Faker.seed(42)`) generating **1,000,000 orders**, **1,000,000 support tickets**, and **50,000 customer accounts** with full determinism.
@@ -171,6 +199,7 @@ flowchart LR
 
 ## Domain Focus
 
+- **Real Estate & Government Open Data Analytics:** Property transaction modeling, area-level market segmentation, star-schema DW on government open data (DLD), Row-Level Security.
 - **E-Commerce & Retail Analytics:** Revenue leakage detection, cohort retention, order fulfillment metrics, AOV & CLV modeling.
 - **Supply Chain & Logistics Analytics:** Cold-chain temperature telemetry, transit delay tracking, carrier SLA compliance & recovery claims.
 - **Customer Operations & Support Analytics:** SLA governance, ticket lifecycle analysis, VIP customer risk scoring, resolution rate monitoring.
@@ -182,11 +211,12 @@ flowchart LR
 
 | Metric | Where It Came From |
 |---|---|
+| **140K+ real transactions** modeled in a Kimball star schema with **RLS** on government open data | Dubai Real Estate Analytics (Snowflake + Fabric) |
 | **$708.5K** spoilage loss quantified — **$298K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
 | **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
 | **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
 | **49.35%** of tickets flagged urgent VIP-risk before customer churn | CX SLA Diagnostic Engine (DuckDB) |
-| **7** end-to-end analytics builds across Snowflake, Databricks, Synapse, MySQL, DuckDB & Python | Portfolio builds |
+| **8** end-to-end analytics builds across Snowflake, Databricks, Fabric, Synapse, MySQL, DuckDB & Python | Portfolio builds |
 | **100%** reproducible pipelines with documented data quality checks and validation | Tested & verified models |
 
 ---
@@ -210,7 +240,7 @@ Project datasets utilize **synthetic data generators (Faker with fixed seeds) an
 
 ## Currently
 
-Targeting entry-level **Data Analyst**, **BI Developer**, and **Associate Data Engineer** roles where I can apply strong SQL, Python, Power BI, and cloud data warehousing skills to drive data-informed business decisions.
+Actively seeking **Data Analyst**, **Business Analyst**, **BI Developer**, **Operations Analyst**, or **Associate Data Engineer** roles — particularly in organizations using Snowflake, Databricks, Microsoft Fabric, or Power BI. Open to remote, hybrid, and relocation opportunities.
 
 ---
 
