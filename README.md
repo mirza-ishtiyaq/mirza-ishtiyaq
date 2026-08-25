@@ -27,7 +27,7 @@
 
 **Data Analyst / BI Developer** with a B.Sc. in Data Science and 6 months of internship experience building production-grade analytics pipelines on **Snowflake**, **Databricks**, **Microsoft Fabric**, and **DuckDB**.
 
-I specialize in Kimball-style star schemas, end-to-end cloud ELT pipelines, advanced SQL/DAX, and executive Power BI dashboards. My work focuses on quantifying business impact — surfacing **$708K in supply-chain losses**, **$97K in revenue leakage**, and building **Row-Level Security models** on real government open data.
+I specialize in Kimball-style star schemas, end-to-end cloud ELT pipelines, advanced SQL/DAX, and executive Power BI dashboards. My work focuses on quantifying business impact — surfacing **$666K in supply-chain losses**, **$97K in revenue leakage**, and building **Row-Level Security models** on real government open data.
 
 Every project below pairs rigorous data transformations with verifiable business insights and metrics.
 
@@ -149,10 +149,10 @@ flowchart LR
 ![Pharma Cold-Chain Spoilage Dashboard](images/snowflake_pharma_dashboard.jpg)
 
 **Solution & Findings:**
-- **$708,550** in YTD spoilage loss across 297 of 5,000 shipments — a **5.94%** spoilage rate against a **<2%** industry benchmark.
+- **$666,050** in YTD spoilage loss across 281 of 4,750 clean shipments — a **5.92%** spoilage rate against a **<2%** industry benchmark.
 - Conducted chi-square hypothesis testing on origin temperature (>30°C) versus transit duration (>40hr) to validate correlation before recommending operational changes.
-- Identified critical data-quality constraints: weather telemetry covered **49% of shipments**, and **124 Shipment_IDs** contained conflicting duplicate entries requiring deduplication.
-- **Delhivery + FedEx accounted for 42% ($298,750)** of total loss, delivering a documented, carrier-attributable SLA recovery claim.
+- Identified critical data-quality constraints: weather telemetry covered **~49% of shipments**, and **124 Shipment_IDs** contained conflicting duplicate entries — excluded from the financial model rather than arbitrarily resolved, since no reliable ingest timestamp exists yet to pick the correct version.
+- **BlueDart + Delhivery accounted for 42% (~$279,550)** of total loss, delivering a documented, carrier-attributable SLA recovery claim.
 
 **Tools Used:** Snowflake SQL (RAW → CLEAN → BUSINESS schemas), Python (REST API ingestion, Pandas), Power BI.
 
@@ -228,7 +228,7 @@ flowchart LR
 | Metric | Where It Came From |
 |---|---|
 | **140K+ real transactions** modeled in a Kimball star schema with **RLS** on government open data | Dubai Real Estate Analytics (Snowflake + Fabric) |
-| **$708.5K** spoilage loss quantified — **$298K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
+| **$666K** spoilage loss quantified — **~$279.5K recoverable** in SLA claims against 2 named carriers | Pharmaceutical Cold-Chain Analytics (Snowflake) |
 | **$97.24K** revenue leakage surfaced in a $1.20M e-commerce pipeline | E-Commerce Medallion Pipeline (Databricks) |
 | **2,000,000+** orders & support tickets processed in a Bronze→Silver→Gold warehouse | CX SLA Diagnostic Engine (DuckDB) |
 | **49.35%** of tickets flagged urgent VIP-risk before customer churn | CX SLA Diagnostic Engine (DuckDB) |
@@ -242,9 +242,9 @@ flowchart LR
 | Project | Stack | Highlight |
 |---|---|---|
 | **Enterprise Sales Analytics Dashboard** | Azure Fabric · Spark SQL · Power BI · DAX · Excel | $2.26M multi-year sales reconciled Power BI ↔ Excel; live Python/ODBC bridge connecting MySQL to Power BI. |
-| **Retail Data Quality & Executive Analytics Engine** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline resolving orphan transaction anomalies. |
+| **[Retail Data Quality & Executive Analytics Engine](https://github.com/mirza-ishtiyaq/retail-data-quality-engine)** | Python · Pandas · NumPy · Matplotlib | Modular dedup → standardize → impute → join pipeline resolving orphan order and orphan transaction anomalies symmetrically. |
 | **[Sales Data Analysis & Business Logic](https://github.com/mirza-ishtiyaq/sales-cohort-retention-analysis-mysql)** | MySQL 8.0+ · CTEs · Window Functions | Comprehensive SQL exploration diagnosing missing value imputation and cohort revenue distribution. |
-| **EcomDB — Enterprise SQL Analytics Suite** | T-SQL · Azure Synapse · Microsoft Fabric | Production business queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse optimization. |
+| **[EcomDB — Enterprise SQL Analytics Suite](https://github.com/mirza-ishtiyaq/ecomdb-sql-analytics-suite)** | T-SQL · Azure Synapse · Microsoft Fabric | Production business queries (revenue ranking, cold-lead detection, loyalty segmentation) with documented Synapse optimization. |
 
 ---
 
