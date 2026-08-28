@@ -78,7 +78,7 @@ Every project below pairs rigorous data transformations with verifiable business
 | **Cloud Platforms & Warehouses** | Snowflake · Databricks (Delta Lake) · Azure Synapse Analytics · Microsoft Fabric · DuckDB |
 | **Data Warehousing & Modeling** | Medallion Architecture (Bronze/Silver/Gold) · Star Schema · Dimensional Modelling · ETL/ELT Pipelines |
 | **SQL & Database Engines** | Advanced SQL (CTEs, Window Functions) · T-SQL · Spark SQL · PostgreSQL · MySQL 8.0 · Data Validation |
-| **Python & Data Engineering** | Pandas · NumPy · SQLAlchemy · Matplotlib · Seaborn · REST API Ingestion · Faker |
+| **Python & Data Engineering** | Pandas · NumPy · SQLAlchemy · Matplotlib · Seaborn · REST API Ingestion|
 | **BI & Analytics Visualization** | Power BI · DAX · Power Query · Power Pivot · Interactive Visualizations · Automated Refresh · KPI Design |
 | **Spreadsheets & Developer Tools** | Advanced Excel (XLOOKUP, Pivot Tables, Power Pivot) · Git / GitHub · VS Code · Jupyter Notebooks |
 
@@ -187,7 +187,7 @@ flowchart LR
 ---
 
 ### 4. CX Support Ticket Lifecycle & SLA Breach Diagnostic Engine
-**[📦 cx-ticket-lifecycle-engine](https://github.com/mirza-ishtiyaq/cx-ticket-lifecycle-engine)** &nbsp; `DuckDB` `Python (Faker, Pandas)` `SQL`
+**[📦 cx-ticket-lifecycle-engine](https://github.com/mirza-ishtiyaq/cx-ticket-lifecycle-engine)** &nbsp; `DuckDB` `Python (Pandas)` `SQL`
 
 **Data Source:** FakeStore REST API (20-SKU catalog) integrated with a seeded synthetic transactional engine (`Faker.seed(42)`) generating **1,000,000 orders**, **1,000,000 support tickets**, and **50,000 customer accounts** with full determinism.
 
