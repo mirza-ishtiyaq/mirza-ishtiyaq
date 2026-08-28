@@ -150,7 +150,7 @@ flowchart LR
 
 **Solution & Findings:**
 - **$666,050** in YTD spoilage loss across 281 of 4,750 clean shipments — a **5.92%** spoilage rate against a **<2%** industry benchmark.
-- Conducted chi-square hypothesis testing on origin temperature (>30°C) versus transit duration (>40hr) to validate correlation before recommending operational changes.
+- Cross-analyzed origin temperature (>30°C) against transit duration (>40hr) on the weather-matched shipments and flagged the gap as a directional signal to monitor, not a confirmed driver, before recommending operational changes.
 - Identified critical data-quality constraints: weather telemetry covered **~49% of shipments**, and **124 Shipment_IDs** contained conflicting duplicate entries — excluded from the financial model rather than arbitrarily resolved, since no reliable ingest timestamp exists yet to pick the correct version.
 - **BlueDart + Delhivery accounted for 42% (~$279,550)** of total loss, delivering a documented, carrier-attributable SLA recovery claim.
 
