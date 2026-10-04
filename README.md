@@ -1,7 +1,7 @@
 <div align="center">
 
 # Mirza Ishtiyaq Baig
-### Data Analyst · BI Developer · Data Science Graduate
+### Data, Operations & BI Analyst · Power BI · SQL · Cloud Data Platforms
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-mirzaishtiyaqbaig-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mirzaishtiyaqbaig/)
 [![Email](https://img.shields.io/badge/Email-mirzaishtiyaqbaig1%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mirzaishtiyaqbaig1@gmail.com)
@@ -25,9 +25,9 @@
 
 ## About
 
-**Data Analyst / BI Developer** with a B.Sc. in Data Science and 6 months of internship experience building production-grade analytics pipelines on **Snowflake**, **Databricks**, **Microsoft Fabric**, and **DuckDB**.
+**Data, Operations & BI Analyst** with a B.Sc. in Data Science and ~4 years of experience at **Concentrix** owning SLA performance, high-priority escalations, operational scorecards, and cloud analytics pipelines across **Snowflake**, **Databricks**, **Microsoft Fabric**, and **DuckDB**.
 
-I specialize in Kimball-style star schemas, end-to-end cloud ELT pipelines, advanced SQL/DAX, and executive Power BI dashboards. My work focuses on quantifying business impact — surfacing **$666K in supply-chain losses**, **$97K in revenue leakage**, and building **Row-Level Security models** on real government open data.
+I specialize in operational excellence, SLA governance, Kimball-style star schemas, advanced SQL/DAX, and executive Power BI dashboards. My work focuses on quantifying business impact — leading working groups of up to 24 associates, surfacing **$666K in supply-chain losses**, **$97K in revenue leakage**, and building **Row-Level Security models** on real government open data.
 
 Every project below pairs rigorous data transformations with verifiable business insights and metrics.
 
@@ -37,23 +37,24 @@ Every project below pairs rigorous data transformations with verifiable business
 
 | If you're hiring for... | Start here |
 |---|---|
-| **Data Analyst** | [Internship Experience](#internship-experience) → [Technical Stack](#technical-stack) → [Featured Projects](#featured-projects) |
+| **Data Analyst** | [Professional Experience](#professional-experience) → [Technical Stack](#technical-stack) → [Featured Projects](#featured-projects) |
 | **BI Developer** | [Technical Stack: BI & Reporting](#technical-stack) → [Featured Projects](#featured-projects) |
-| **Business / Operations Analyst** | [Internship Experience](#internship-experience) → [Domain Focus](#domain-focus) → [Featured Projects](#featured-projects) |
+| **Business / Operations Analyst** | [Professional Experience](#professional-experience) → [Domain Focus](#domain-focus) → [Featured Projects](#featured-projects) |
 | **Just want the numbers** | [Impact Snapshot](#impact-snapshot) |
 
 ---
 
-## Internship Experience
+## Professional Experience
 
-### **Data Analytics Intern — Cloud Architecture & Operations**
-**Full Stack Academy** · *Feb 2026 – Jul 2026*
+### **Sr. Representative, Operations & Escalation Governance**
+**Concentrix** · *Sep 2022 – Jul 2026* | Hyderabad, India
 
-- **End-to-End Cloud Pipelines:** Designed and implemented multi-stage ETL/ELT pipelines across **Snowflake**, **Databricks (Delta Lake Medallion Architecture)**, and **DuckDB** to ingest, clean, and model high-volume transactional and operational datasets.
-- **Automated BI Integration:** Built a custom Python/ODBC connector bridging a macOS-hosted MySQL database directly to Power BI, eliminating manual CSV workflows and enabling live dashboard refresh.
-- **Relational & Dimensional Modeling:** Architected star schemas, fact/dimension tables, and optimized SQL queries using CTEs and window functions to compute SLA metrics and revenue trends.
-- **Executive Dashboarding:** Developed interactive Power BI dashboards utilizing advanced DAX measures, parameter-driven filtering, and drill-through capabilities to monitor carrier SLA compliance and customer ticket lifecycles.
-- **Technical Mentorship:** Facilitated peer learning sessions on advanced SQL querying, data hygiene practices, and Power BI visualization standards for incoming cohort members.
+- **High-Ageing Case Inventory & SLA Protection:** Owned ongoing, high-ageing case inventory across a consumer-product portfolio, strategizing the operational response on SLA-breach cases and driving proactive Plans of Action (POAs) before contractual thresholds were reached.
+- **Cross-Functional Working Group Leadership:** Built and led a technical working group of up to 24 associates—selected and onboarded staff internally based on performance and communication skills to handle critical escalations, dynamically flexing headcount against volume.
+- **Critical Escalation Queue Governance:** Managed the escalation queue for critical accounts: prioritized incidents, routed to technical specialists, and collaborated through to resolution with QA and engineering teams.
+- **Executive Dashboarding & Scorecards:** Designed, built, and maintained **Power BI dashboards & operational scorecards** (case volume, ageing, handle time, adherence, SLA breach rate) adopted by operations managers and client leadership as the primary monthly review view.
+- **Root Cause Analysis (RCA) & Process Improvement:** Performed ad-hoc analysis on operations and CX data to isolate recurring failure drivers and size proposed workflow changes; partnered with directors and QA to convert root causes into standard operating procedures (SOPs).
+- **Audit Compliance & Quality Assurance:** Monitored team login adherence, productivity, and case documentation standards, reviewing technical findings before case closure to ensure audit readiness.
 
 ---
 
@@ -63,7 +64,6 @@ Every project below pairs rigorous data transformations with verifiable business
 *Osmania University, Hyderabad, India · 2025*
 
 **📜 Professional Certifications & Completed Programs:**
-- **Data Analytics Internship** — Full Stack Academy (2026)
 - **Microsoft Fabric: Data Flows & Data Storage** — Microsoft (2025)
 - **SQL for Data Analysis** — LinkedIn Learning (2025)
 - **Analyzing & Visualizing Data Using Excel** — NASBA (2025)
