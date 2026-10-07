@@ -37,24 +37,10 @@ Every project below pairs rigorous data transformations with verifiable business
 
 | If you're hiring for... | Start here |
 |---|---|
-| **Data Analyst** | [Professional Experience](#professional-experience) → [Technical Stack](#technical-stack) → [Featured Projects](#featured-projects) |
+| **Data Analyst** | [Technical Stack](#technical-stack) → [Featured Projects](#featured-projects) |
 | **BI Developer** | [Technical Stack: BI & Reporting](#technical-stack) → [Featured Projects](#featured-projects) |
-| **Business / Operations Analyst** | [Professional Experience](#professional-experience) → [Domain Focus](#domain-focus) → [Featured Projects](#featured-projects) |
+| **Business / Operations Analyst** | [Domain Focus](#domain-focus) → [Featured Projects](#featured-projects) |
 | **Just want the numbers** | [Impact Snapshot](#impact-snapshot) |
-
----
-
-## Professional Experience
-
-### **Sr. Representative, Operations & Escalation Governance**
-**Concentrix** · *Sep 2022 – Jul 2026* | Hyderabad, India
-
-- **High-Ageing Case Inventory & SLA Protection:** Owned ongoing, high-ageing case inventory across a consumer-product portfolio, strategizing the operational response on SLA-breach cases and driving proactive Plans of Action (POAs) before contractual thresholds were reached.
-- **Cross-Functional Working Group Leadership:** Built and led a technical working group of up to 24 associates—selected and onboarded staff internally based on performance and communication skills to handle critical escalations, dynamically flexing headcount against volume.
-- **Critical Escalation Queue Governance:** Managed the escalation queue for critical accounts: prioritized incidents, routed to technical specialists, and collaborated through to resolution with QA and engineering teams.
-- **Executive Dashboarding & Scorecards:** Designed, built, and maintained **Power BI dashboards & operational scorecards** (case volume, ageing, handle time, adherence, SLA breach rate) adopted by operations managers and client leadership as the primary monthly review view.
-- **Root Cause Analysis (RCA) & Process Improvement:** Performed ad-hoc analysis on operations and CX data to isolate recurring failure drivers and size proposed workflow changes; partnered with directors and QA to convert root causes into standard operating procedures (SOPs).
-- **Audit Compliance & Quality Assurance:** Monitored team login adherence, productivity, and case documentation standards, reviewing technical findings before case closure to ensure audit readiness.
 
 ---
 
