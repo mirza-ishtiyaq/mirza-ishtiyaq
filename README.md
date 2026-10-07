@@ -25,9 +25,9 @@
 
 ## About
 
-**Data, Operations & BI Analyst** with a B.Sc. in Data Science and ~4 years of experience at **Concentrix** owning SLA performance, high-priority escalations, operational scorecards, and cloud analytics pipelines across **Snowflake**, **Databricks**, **Microsoft Fabric**, and **DuckDB**.
+**Data, Operations & BI Analyst** with a B.Sc. in Data Science who builds SLA performance analytics, operational scorecards and cloud analytics pipelines across **Snowflake**, **Databricks**, **Microsoft Fabric**, and **DuckDB**.
 
-I specialize in operational excellence, SLA governance, Kimball-style star schemas, advanced SQL/DAX, and executive Power BI dashboards. My work focuses on quantifying business impact — leading working groups of up to 24 associates, surfacing **$666K in supply-chain losses**, **$97K in revenue leakage**, and building **Row-Level Security models** on real government open data.
+I specialize in operational excellence, SLA governance, Kimball-style star schemas, advanced SQL/DAX, and executive Power BI dashboards. My work focuses on quantifying business impact — surfacing **$666K in supply-chain losses**, **$97K in revenue leakage**, and building **Row-Level Security models** on real government open data.
 
 Every project below pairs rigorous data transformations with verifiable business insights and metrics.
 
