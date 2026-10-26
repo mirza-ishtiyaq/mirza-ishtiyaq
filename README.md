@@ -50,7 +50,7 @@ Every project below pairs rigorous data transformations with verifiable business
 *Osmania University, Hyderabad, India · 2025*
 
 **📜 Professional Certifications & Completed Programs:**
-- **Microsoft Fabric: Data Flows & Data Storage** — Microsoft (2025)
+- **Microsoft Fabric: Data Flows & Data Storage** — LinkedIn Learning (2025)
 - **SQL for Data Analysis** — LinkedIn Learning (2025)
 - **Analyzing & Visualizing Data Using Excel** — NASBA (2025)
 - **Excel Data Management** — PMI (2025)
